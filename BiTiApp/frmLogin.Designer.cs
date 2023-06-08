@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pnLogin = new System.Windows.Forms.Panel();
+            this.btnRegChange = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -57,11 +58,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblRegClose = new System.Windows.Forms.Label();
             this.pnRegister = new System.Windows.Forms.Panel();
+            this.btnLoginChange = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnRegChange = new System.Windows.Forms.Button();
-            this.btnLoginChange = new System.Windows.Forms.Button();
             this.pnLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -95,6 +95,18 @@
             this.pnLogin.Size = new System.Drawing.Size(273, 361);
             this.pnLogin.TabIndex = 0;
             // 
+            // btnRegChange
+            // 
+            this.btnRegChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.btnRegChange.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegChange.ForeColor = System.Drawing.Color.White;
+            this.btnRegChange.Location = new System.Drawing.Point(27, 289);
+            this.btnRegChange.Name = "btnRegChange";
+            this.btnRegChange.Size = new System.Drawing.Size(212, 42);
+            this.btnRegChange.TabIndex = 12;
+            this.btnRegChange.Text = "Đăng ký";
+            this.btnRegChange.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
@@ -104,7 +116,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 42);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Login";
+            this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // checkBox1
@@ -114,9 +126,9 @@
             this.checkBox1.ForeColor = System.Drawing.Color.White;
             this.checkBox1.Location = new System.Drawing.Point(27, 206);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(112, 24);
+            this.checkBox1.Size = new System.Drawing.Size(74, 24);
             this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "Remember me";
+            this.checkBox1.Text = "Ghi nhớ";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // txtPass
@@ -129,7 +141,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(159, 18);
             this.txtPass.TabIndex = 9;
-            this.txtPass.Text = "Password";
+            this.txtPass.Text = "Mật khẩu";
             // 
             // pictureBox3
             // 
@@ -246,7 +258,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(212, 42);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Sign Up";
+            this.button2.Text = "Đăng ký";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox1
@@ -259,7 +271,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(159, 18);
             this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Password";
+            this.textBox1.Text = "Mật khẩu";
             // 
             // pictureBox4
             // 
@@ -371,6 +383,18 @@
             this.pnRegister.TabIndex = 12;
             this.pnRegister.Visible = false;
             // 
+            // btnLoginChange
+            // 
+            this.btnLoginChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.btnLoginChange.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoginChange.ForeColor = System.Drawing.Color.White;
+            this.btnLoginChange.Location = new System.Drawing.Point(27, 307);
+            this.btnLoginChange.Name = "btnLoginChange";
+            this.btnLoginChange.Size = new System.Drawing.Size(212, 42);
+            this.btnLoginChange.TabIndex = 13;
+            this.btnLoginChange.Text = "Đăng nhập";
+            this.btnLoginChange.UseVisualStyleBackColor = false;
+            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
@@ -381,7 +405,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(159, 18);
             this.textBox3.TabIndex = 14;
-            this.textBox3.Text = "Confirm Password";
+            this.textBox3.Text = "Nhập lại mật khẩu";
             // 
             // pictureBox7
             // 
@@ -400,30 +424,6 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(180, 1);
             this.label11.TabIndex = 12;
-            // 
-            // btnRegChange
-            // 
-            this.btnRegChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.btnRegChange.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegChange.ForeColor = System.Drawing.Color.White;
-            this.btnRegChange.Location = new System.Drawing.Point(27, 289);
-            this.btnRegChange.Name = "btnRegChange";
-            this.btnRegChange.Size = new System.Drawing.Size(212, 42);
-            this.btnRegChange.TabIndex = 12;
-            this.btnRegChange.Text = "Sign Up";
-            this.btnRegChange.UseVisualStyleBackColor = false;
-            // 
-            // btnLoginChange
-            // 
-            this.btnLoginChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.btnLoginChange.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoginChange.ForeColor = System.Drawing.Color.White;
-            this.btnLoginChange.Location = new System.Drawing.Point(27, 307);
-            this.btnLoginChange.Name = "btnLoginChange";
-            this.btnLoginChange.Size = new System.Drawing.Size(212, 42);
-            this.btnLoginChange.TabIndex = 13;
-            this.btnLoginChange.Text = "Login";
-            this.btnLoginChange.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 
