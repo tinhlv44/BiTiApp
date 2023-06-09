@@ -56,6 +56,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -65,6 +66,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(66)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
             this.panel1.Controls.Add(this.btnTaikhoang);
@@ -328,6 +330,16 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 19;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
+            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,6 +369,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmSanPham";
             this.Text = "Form sản phẩm";
+            this.Load += new System.EventHandler(this.frmSanPham_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -395,5 +408,6 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnQuanLy;
     }
 }

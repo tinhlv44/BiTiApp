@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="MessageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IsManager.cs" />
     <Compile Include="frmChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>

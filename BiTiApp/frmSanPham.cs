@@ -16,5 +16,16 @@ namespace BiTiApp
         {
             InitializeComponent();
         }
+        private void frmSanPham_Load(object sender, EventArgs e)
+        {
+            if (!IsManager.getIsManager())
+            {
+                ShowLimitedContent();
+            }
+        }
+        private void ShowLimitedContent()
+        {
+            btnQuanLy.Visible = false;
+        }
     }
 }

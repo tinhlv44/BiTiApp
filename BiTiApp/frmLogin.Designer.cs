@@ -118,6 +118,7 @@
             this.btnDangNhapTaiKhoan.TabIndex = 11;
             this.btnDangNhapTaiKhoan.Text = "Đăng nhập";
             this.btnDangNhapTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnDangNhapTaiKhoan.Click += new System.EventHandler(this.btnDangNhapTaiKhoan_Click);
             // 
             // checkBox_GhiNho
             // 
@@ -142,6 +143,7 @@
             this.txtMatKhau_DangNhap.Size = new System.Drawing.Size(159, 18);
             this.txtMatKhau_DangNhap.TabIndex = 9;
             this.txtMatKhau_DangNhap.Text = "Mật khẩu";
+            this.txtMatKhau_DangNhap.Click += new System.EventHandler(this.txtMatKhau_DangNhap_Click);
             // 
             // pictureBox3
             // 
@@ -172,6 +174,7 @@
             this.txtEmail_DangNhap.Size = new System.Drawing.Size(159, 18);
             this.txtEmail_DangNhap.TabIndex = 6;
             this.txtEmail_DangNhap.Text = "Email";
+            this.txtEmail_DangNhap.Click += new System.EventHandler(this.txtEmail_DangNhap_Click);
             // 
             // pictureBox2
             // 
@@ -272,6 +275,7 @@
             this.txtMatKhau_Dangky.Size = new System.Drawing.Size(159, 18);
             this.txtMatKhau_Dangky.TabIndex = 9;
             this.txtMatKhau_Dangky.Text = "Mật khẩu";
+            this.txtMatKhau_Dangky.Click += new System.EventHandler(this.txtMatKhau_DangNhap_Click);
             // 
             // pictureBox4
             // 
@@ -302,6 +306,7 @@
             this.txtEmail_Dangky.Size = new System.Drawing.Size(159, 18);
             this.txtEmail_Dangky.TabIndex = 6;
             this.txtEmail_Dangky.Text = "Email";
+            this.txtEmail_Dangky.Click += new System.EventHandler(this.txtEmail_DangNhap_Click);
             // 
             // pictureBox5
             // 
@@ -406,6 +411,7 @@
             this.txtNhapLai_MatKhau_Dky.Size = new System.Drawing.Size(159, 18);
             this.txtNhapLai_MatKhau_Dky.TabIndex = 14;
             this.txtNhapLai_MatKhau_Dky.Text = "Nhập lại mật khẩu";
+            this.txtNhapLai_MatKhau_Dky.Click += new System.EventHandler(this.txtNhapLai_MatKhau_Dky_Click);
             // 
             // pictureBox7
             // 

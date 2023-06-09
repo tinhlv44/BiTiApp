@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BiTiApp
 {
@@ -51,5 +53,58 @@ namespace BiTiApp
             this.Close();
         }
         #endregion
+        private void btnDangNhapTaiKhoan_Click(object sender, EventArgs e)
+        {
+            DatabaseConnection con = new DatabaseConnection();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT * FROM Userr", con.Open());
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            foreach (DataRow row in dataTable.Rows)
+            {
+                string user = (string)row["User/Email"];
+                string password = (string)row["Password"];
+                if (user == txtEmail_DangNhap.Text && password == txtMatKhau_DangNhap.Text)
+                {
+                    if ((bool)row["IsManager"] == true)
+                    {
+                        IsManager.setIsManager(true);
+                    }
+                    else
+                    {
+                        IsManager.setIsManager(false);
+                    }
+                    frmSanPham sp = new frmSanPham();
+                    sp.Show();
+                }
+            }
+            MessageBox.Show("Sai tài khoản hoặc mật khẩu");
         }
+
+        private void txtEmail_DangNhap_Click(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            if (txt.Text== "Email")
+            {
+                txt.Text = "";
+            }
+        }
+
+        private void txtMatKhau_DangNhap_Click(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            if (txt.Text == "Mật khẩu")
+            {
+                txt.Text = "";
+            }
+        }
+
+        private void txtNhapLai_MatKhau_Dky_Click(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            if (txt.Text == "Nhập lại mật khẩu")
+            {
+                txt.Text = "";
+            }
+        }
+    }
 }   
