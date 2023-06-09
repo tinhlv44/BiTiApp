@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.btnTaikhoang = new System.Windows.Forms.Button();
             this.btnHoadon = new System.Windows.Forms.Button();
             this.btnKhachhang = new System.Windows.Forms.Button();
             this.btnSanpham = new System.Windows.Forms.Button();
-            this.btnQuanLy = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblVaiTro = new System.Windows.Forms.Label();
             this.checkBox_NV = new System.Windows.Forms.CheckBox();
             this.checkBox_QTri = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
@@ -73,6 +73,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 591);
             this.panel1.TabIndex = 3;
+            // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 6;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
             // 
             // pictureLogo
             // 
@@ -133,16 +143,6 @@
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
             this.btnSanpham.UseVisualStyleBackColor = true;
-            // 
-            // btnQuanLy
-            // 
-            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
-            this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
-            this.btnQuanLy.TabIndex = 6;
-            this.btnQuanLy.Text = "Quản lý";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -272,15 +272,15 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblVaiTro
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(316, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Vai trò:";
+            this.lblVaiTro.AutoSize = true;
+            this.lblVaiTro.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVaiTro.Location = new System.Drawing.Point(316, 152);
+            this.lblVaiTro.Name = "lblVaiTro";
+            this.lblVaiTro.Size = new System.Drawing.Size(52, 17);
+            this.lblVaiTro.TabIndex = 46;
+            this.lblVaiTro.Text = "Vai trò:";
             // 
             // checkBox_NV
             // 
@@ -309,7 +309,7 @@
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.checkBox_QTri);
             this.Controls.Add(this.checkBox_NV);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblVaiTro);
             this.Controls.Add(this.lblSDT);
             this.Controls.Add(this.lblDiaChi);
             this.Controls.Add(this.lblEmail);
@@ -359,7 +359,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblVaiTro;
         private System.Windows.Forms.CheckBox checkBox_NV;
         private System.Windows.Forms.CheckBox checkBox_QTri;
     }
