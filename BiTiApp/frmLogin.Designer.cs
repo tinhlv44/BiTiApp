@@ -32,12 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pnLogin = new System.Windows.Forms.Panel();
             this.btnRegChange = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnDangNhapTaiKhoan = new System.Windows.Forms.Button();
+            this.checkBox_GhiNho = new System.Windows.Forms.CheckBox();
+            this.txtMatKhau_DangNhap = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtEmail_DangNhap = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,11 +46,11 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDangkyTaiKhoan = new System.Windows.Forms.Button();
+            this.txtMatKhau_Dangky = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail_Dangky = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             this.lblRegClose = new System.Windows.Forms.Label();
             this.pnRegister = new System.Windows.Forms.Panel();
             this.btnLoginChange = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNhapLai_MatKhau_Dky = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pnLogin.SuspendLayout();
@@ -77,12 +77,12 @@
             // 
             this.pnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
             this.pnLogin.Controls.Add(this.btnRegChange);
-            this.pnLogin.Controls.Add(this.button1);
-            this.pnLogin.Controls.Add(this.checkBox1);
-            this.pnLogin.Controls.Add(this.txtPass);
+            this.pnLogin.Controls.Add(this.btnDangNhapTaiKhoan);
+            this.pnLogin.Controls.Add(this.checkBox_GhiNho);
+            this.pnLogin.Controls.Add(this.txtMatKhau_DangNhap);
             this.pnLogin.Controls.Add(this.pictureBox3);
             this.pnLogin.Controls.Add(this.label1);
-            this.pnLogin.Controls.Add(this.txtUser);
+            this.pnLogin.Controls.Add(this.txtEmail_DangNhap);
             this.pnLogin.Controls.Add(this.pictureBox2);
             this.pnLogin.Controls.Add(this.label4);
             this.pnLogin.Controls.Add(this.label3);
@@ -107,41 +107,41 @@
             this.btnRegChange.Text = "Đăng ký";
             this.btnRegChange.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnDangNhapTaiKhoan
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(27, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 42);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Đăng nhập";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDangNhapTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.btnDangNhapTaiKhoan.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhapTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhapTaiKhoan.Location = new System.Drawing.Point(27, 241);
+            this.btnDangNhapTaiKhoan.Name = "btnDangNhapTaiKhoan";
+            this.btnDangNhapTaiKhoan.Size = new System.Drawing.Size(212, 42);
+            this.btnDangNhapTaiKhoan.TabIndex = 11;
+            this.btnDangNhapTaiKhoan.Text = "Đăng nhập";
+            this.btnDangNhapTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // checkBox_GhiNho
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(27, 206);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(74, 24);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "Ghi nhớ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox_GhiNho.AutoSize = true;
+            this.checkBox_GhiNho.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_GhiNho.ForeColor = System.Drawing.Color.White;
+            this.checkBox_GhiNho.Location = new System.Drawing.Point(27, 206);
+            this.checkBox_GhiNho.Name = "checkBox_GhiNho";
+            this.checkBox_GhiNho.Size = new System.Drawing.Size(74, 24);
+            this.checkBox_GhiNho.TabIndex = 10;
+            this.checkBox_GhiNho.Text = "Ghi nhớ";
+            this.checkBox_GhiNho.UseVisualStyleBackColor = true;
             // 
-            // txtPass
+            // txtMatKhau_DangNhap
             // 
-            this.txtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPass.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(69, 170);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(159, 18);
-            this.txtPass.TabIndex = 9;
-            this.txtPass.Text = "Mật khẩu";
+            this.txtMatKhau_DangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.txtMatKhau_DangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatKhau_DangNhap.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau_DangNhap.ForeColor = System.Drawing.Color.White;
+            this.txtMatKhau_DangNhap.Location = new System.Drawing.Point(69, 170);
+            this.txtMatKhau_DangNhap.Name = "txtMatKhau_DangNhap";
+            this.txtMatKhau_DangNhap.Size = new System.Drawing.Size(159, 18);
+            this.txtMatKhau_DangNhap.TabIndex = 9;
+            this.txtMatKhau_DangNhap.Text = "Mật khẩu";
             // 
             // pictureBox3
             // 
@@ -161,17 +161,17 @@
             this.label1.Size = new System.Drawing.Size(180, 1);
             this.label1.TabIndex = 7;
             // 
-            // txtUser
+            // txtEmail_DangNhap
             // 
-            this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUser.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(69, 119);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(159, 18);
-            this.txtUser.TabIndex = 6;
-            this.txtUser.Text = "Email";
+            this.txtEmail_DangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.txtEmail_DangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail_DangNhap.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail_DangNhap.ForeColor = System.Drawing.Color.White;
+            this.txtEmail_DangNhap.Location = new System.Drawing.Point(69, 119);
+            this.txtEmail_DangNhap.Name = "txtEmail_DangNhap";
+            this.txtEmail_DangNhap.Size = new System.Drawing.Size(159, 18);
+            this.txtEmail_DangNhap.TabIndex = 6;
+            this.txtEmail_DangNhap.Text = "Email";
             // 
             // pictureBox2
             // 
@@ -249,29 +249,29 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Wellcome";
             // 
-            // button2
+            // txtDangkyTaiKhoan
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(27, 259);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 42);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Đăng ký";
-            this.button2.UseVisualStyleBackColor = false;
+            this.txtDangkyTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.txtDangkyTaiKhoan.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDangkyTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.txtDangkyTaiKhoan.Location = new System.Drawing.Point(27, 259);
+            this.txtDangkyTaiKhoan.Name = "txtDangkyTaiKhoan";
+            this.txtDangkyTaiKhoan.Size = new System.Drawing.Size(212, 42);
+            this.txtDangkyTaiKhoan.TabIndex = 11;
+            this.txtDangkyTaiKhoan.Text = "Đăng ký";
+            this.txtDangkyTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtMatKhau_Dangky
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(69, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 18);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Mật khẩu";
+            this.txtMatKhau_Dangky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.txtMatKhau_Dangky.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatKhau_Dangky.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau_Dangky.ForeColor = System.Drawing.Color.White;
+            this.txtMatKhau_Dangky.Location = new System.Drawing.Point(69, 166);
+            this.txtMatKhau_Dangky.Name = "txtMatKhau_Dangky";
+            this.txtMatKhau_Dangky.Size = new System.Drawing.Size(159, 18);
+            this.txtMatKhau_Dangky.TabIndex = 9;
+            this.txtMatKhau_Dangky.Text = "Mật khẩu";
             // 
             // pictureBox4
             // 
@@ -291,17 +291,17 @@
             this.label6.Size = new System.Drawing.Size(180, 1);
             this.label6.TabIndex = 7;
             // 
-            // textBox2
+            // txtEmail_Dangky
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(69, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 18);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "Email";
+            this.txtEmail_Dangky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.txtEmail_Dangky.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail_Dangky.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail_Dangky.ForeColor = System.Drawing.Color.White;
+            this.txtEmail_Dangky.Location = new System.Drawing.Point(69, 119);
+            this.txtEmail_Dangky.Name = "txtEmail_Dangky";
+            this.txtEmail_Dangky.Size = new System.Drawing.Size(159, 18);
+            this.txtEmail_Dangky.TabIndex = 6;
+            this.txtEmail_Dangky.Text = "Email";
             // 
             // pictureBox5
             // 
@@ -363,14 +363,14 @@
             // 
             this.pnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
             this.pnRegister.Controls.Add(this.btnLoginChange);
-            this.pnRegister.Controls.Add(this.textBox3);
+            this.pnRegister.Controls.Add(this.txtNhapLai_MatKhau_Dky);
             this.pnRegister.Controls.Add(this.pictureBox7);
             this.pnRegister.Controls.Add(this.label11);
-            this.pnRegister.Controls.Add(this.button2);
-            this.pnRegister.Controls.Add(this.textBox1);
+            this.pnRegister.Controls.Add(this.txtDangkyTaiKhoan);
+            this.pnRegister.Controls.Add(this.txtMatKhau_Dangky);
             this.pnRegister.Controls.Add(this.pictureBox4);
             this.pnRegister.Controls.Add(this.label6);
-            this.pnRegister.Controls.Add(this.textBox2);
+            this.pnRegister.Controls.Add(this.txtEmail_Dangky);
             this.pnRegister.Controls.Add(this.pictureBox5);
             this.pnRegister.Controls.Add(this.label7);
             this.pnRegister.Controls.Add(this.label8);
@@ -395,17 +395,17 @@
             this.btnLoginChange.Text = "Đăng nhập";
             this.btnLoginChange.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // txtNhapLai_MatKhau_Dky
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(69, 216);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 18);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.Text = "Nhập lại mật khẩu";
+            this.txtNhapLai_MatKhau_Dky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.txtNhapLai_MatKhau_Dky.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNhapLai_MatKhau_Dky.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNhapLai_MatKhau_Dky.ForeColor = System.Drawing.Color.White;
+            this.txtNhapLai_MatKhau_Dky.Location = new System.Drawing.Point(69, 216);
+            this.txtNhapLai_MatKhau_Dky.Name = "txtNhapLai_MatKhau_Dky";
+            this.txtNhapLai_MatKhau_Dky.Size = new System.Drawing.Size(159, 18);
+            this.txtNhapLai_MatKhau_Dky.TabIndex = 14;
+            this.txtNhapLai_MatKhau_Dky.Text = "Nhập lại mật khẩu";
             // 
             // pictureBox7
             // 
@@ -464,18 +464,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtEmail_DangNhap;
+        private System.Windows.Forms.TextBox txtMatKhau_DangNhap;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox_GhiNho;
+        private System.Windows.Forms.Button btnDangNhapTaiKhoan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button txtDangkyTaiKhoan;
+        private System.Windows.Forms.TextBox txtMatKhau_Dangky;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail_Dangky;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -483,7 +483,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblRegClose;
         private System.Windows.Forms.Panel pnRegister;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNhapLai_MatKhau_Dky;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnRegChange;
