@@ -38,6 +38,7 @@
             this.btnSanpham = new System.Windows.Forms.Button();
             this.btnTaoHoaDon = new System.Windows.Forms.Button();
             this.txtSreach_TheoTenKH = new System.Windows.Forms.TextBox();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(66)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
             this.panel1.Controls.Add(this.btnTaikhoang);
@@ -85,6 +87,7 @@
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
@@ -95,6 +98,7 @@
             this.btnTaikhoang.TabIndex = 3;
             this.btnTaikhoang.Text = "Tài khoản";
             this.btnTaikhoang.UseVisualStyleBackColor = true;
+            this.btnTaikhoang.Click += new System.EventHandler(this.btnTaikhoang_Click);
             // 
             // btnHoadon
             // 
@@ -115,6 +119,7 @@
             this.btnKhachhang.TabIndex = 1;
             this.btnKhachhang.Text = "Khách hàng";
             this.btnKhachhang.UseVisualStyleBackColor = true;
+            this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
             // 
             // btnSanpham
             // 
@@ -125,6 +130,7 @@
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
             this.btnSanpham.UseVisualStyleBackColor = true;
+            this.btnSanpham.Click += new System.EventHandler(this.btnSanpham_Click);
             // 
             // btnTaoHoaDon
             // 
@@ -144,6 +150,17 @@
             this.txtSreach_TheoTenKH.Size = new System.Drawing.Size(251, 32);
             this.txtSreach_TheoTenKH.TabIndex = 26;
             // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 27;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
+            // 
             // frmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +172,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmHoaDon";
             this.Text = "frmHoaDon";
+            this.Load += new System.EventHandler(this.frmHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
@@ -175,5 +193,6 @@
         private System.Windows.Forms.Button btnSanpham;
         private System.Windows.Forms.Button btnTaoHoaDon;
         private System.Windows.Forms.TextBox txtSreach_TheoTenKH;
+        private System.Windows.Forms.Button btnQuanLy;
     }
 }

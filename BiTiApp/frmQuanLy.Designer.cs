@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnQuanLy = new System.Windows.Forms.Button();
-            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.btnTaikhoang = new System.Windows.Forms.Button();
             this.btnHoadon = new System.Windows.Forms.Button();
@@ -53,9 +52,10 @@
             this.lblVaiTro = new System.Windows.Forms.Label();
             this.checkBox_NV = new System.Windows.Forms.CheckBox();
             this.checkBox_QTri = new System.Windows.Forms.CheckBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,16 +84,6 @@
             this.btnQuanLy.Text = "Quản lý";
             this.btnQuanLy.UseVisualStyleBackColor = true;
             // 
-            // pictureLogo
-            // 
-            this.pictureLogo.Image = global::BiTiApp.Properties.Resources.logoBiTi;
-            this.pictureLogo.Location = new System.Drawing.Point(3, 21);
-            this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(194, 125);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureLogo.TabIndex = 5;
-            this.pictureLogo.TabStop = false;
-            // 
             // btnDangxuat
             // 
             this.btnDangxuat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,6 +93,7 @@
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
@@ -113,6 +104,7 @@
             this.btnTaikhoang.TabIndex = 3;
             this.btnTaikhoang.Text = "Tài khoản";
             this.btnTaikhoang.UseVisualStyleBackColor = true;
+            this.btnTaikhoang.Click += new System.EventHandler(this.btnTaikhoang_Click);
             // 
             // btnHoadon
             // 
@@ -123,6 +115,7 @@
             this.btnHoadon.TabIndex = 2;
             this.btnHoadon.Text = "Hóa đơn";
             this.btnHoadon.UseVisualStyleBackColor = true;
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // btnKhachhang
             // 
@@ -133,6 +126,7 @@
             this.btnKhachhang.TabIndex = 1;
             this.btnKhachhang.Text = "Khách hàng";
             this.btnKhachhang.UseVisualStyleBackColor = true;
+            this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
             // 
             // btnSanpham
             // 
@@ -143,6 +137,7 @@
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
             this.btnSanpham.UseVisualStyleBackColor = true;
+            this.btnSanpham.Click += new System.EventHandler(this.btnSanpham_Click);
             // 
             // dataGridView1
             // 
@@ -302,6 +297,16 @@
             this.checkBox_QTri.Text = "Quản trị";
             this.checkBox_QTri.UseVisualStyleBackColor = true;
             // 
+            // pictureLogo
+            // 
+            this.pictureLogo.Image = global::BiTiApp.Properties.Resources.logoBiTi;
+            this.pictureLogo.Location = new System.Drawing.Point(3, 21);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(194, 125);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureLogo.TabIndex = 5;
+            this.pictureLogo.TabStop = false;
+            // 
             // frmQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,8 +333,8 @@
             this.Name = "frmQuanLy";
             this.Text = "frmQuanLy";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

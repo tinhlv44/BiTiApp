@@ -49,6 +49,7 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.lblSDT = new System.Windows.Forms.Label();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(66)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
             this.panel1.Controls.Add(this.btnTaikhoang);
@@ -88,6 +90,7 @@
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
@@ -98,6 +101,7 @@
             this.btnTaikhoang.TabIndex = 3;
             this.btnTaikhoang.Text = "Tài khoản";
             this.btnTaikhoang.UseVisualStyleBackColor = true;
+            this.btnTaikhoang.Click += new System.EventHandler(this.btnTaikhoang_Click);
             // 
             // btnHoadon
             // 
@@ -108,6 +112,7 @@
             this.btnHoadon.TabIndex = 2;
             this.btnHoadon.Text = "Hóa đơn";
             this.btnHoadon.UseVisualStyleBackColor = true;
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // btnKhachhang
             // 
@@ -128,6 +133,7 @@
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
             this.btnSanpham.UseVisualStyleBackColor = true;
+            this.btnSanpham.Click += new System.EventHandler(this.btnSanpham_Click);
             // 
             // btnLamMoi
             // 
@@ -257,6 +263,17 @@
             this.lblSDT.TabIndex = 32;
             this.lblSDT.Text = "Số điện thoại";
             // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 19;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,6 +296,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmKhachHang";
             this.Text = "frmKhachHang";
+            this.Load += new System.EventHandler(this.frmKhachHang_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -310,5 +328,6 @@
         private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.Label lblDiaChi;
         private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Button btnQuanLy;
     }
 }

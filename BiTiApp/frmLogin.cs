@@ -55,7 +55,7 @@ namespace BiTiApp
         #endregion
         private void btnDangNhapTaiKhoan_Click(object sender, EventArgs e)
         {
-            DatabaseConnection con = new DatabaseConnection();
+            clsDatabaseConnection con = new clsDatabaseConnection();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT * FROM Userr", con.Open());
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);
@@ -67,14 +67,14 @@ namespace BiTiApp
                 {
                     if ((bool)row["IsManager"] == true)
                     {
-                        IsManager.setIsManager(true);
+                        clsIsManager.setIsManager(true);
                     }
                     else
                     {
-                        IsManager.setIsManager(false);
+                        clsIsManager.setIsManager(false);
                     }
-                    frmSanPham sp = new frmSanPham();
-                    sp.Show();
+                    clsFormSwitcher.SwitchForm("frmSanPham", this);
+                    return;
                 }
             }
             MessageBox.Show("Sai tài khoản hoặc mật khẩu");

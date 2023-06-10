@@ -54,6 +54,7 @@
             this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(66)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
             this.panel1.Controls.Add(this.btnTaikhoang);
@@ -92,6 +94,7 @@
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
             this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
@@ -112,6 +115,7 @@
             this.btnHoadon.TabIndex = 2;
             this.btnHoadon.Text = "Hóa đơn";
             this.btnHoadon.UseVisualStyleBackColor = true;
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // btnKhachhang
             // 
@@ -122,6 +126,7 @@
             this.btnKhachhang.TabIndex = 1;
             this.btnKhachhang.Text = "Khách hàng";
             this.btnKhachhang.UseVisualStyleBackColor = true;
+            this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
             // 
             // btnSanpham
             // 
@@ -132,6 +137,7 @@
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
             this.btnSanpham.UseVisualStyleBackColor = true;
+            this.btnSanpham.Click += new System.EventHandler(this.btnSanpham_Click);
             // 
             // lblThongTinCaNhan
             // 
@@ -309,6 +315,17 @@
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
             // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 28;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
+            // 
             // frmTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,6 +353,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmTaiKhoan";
             this.Text = "frmTaiKhoan";
+            this.Load += new System.EventHandler(this.frmTaiKhoan_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
@@ -371,5 +389,6 @@
         private System.Windows.Forms.Button btnDoiMatKhau;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Button btnQuanLy;
     }
 }

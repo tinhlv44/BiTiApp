@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BiTiApp
 {
-    public class IsManager
+    public class clsIsManager
     {
         private static bool isManager = false;
-        public IsManager()
+        public clsIsManager()
         {
         }
         public static bool getIsManager()
@@ -18,7 +18,7 @@ namespace BiTiApp
         }
         public static void setIsManager(bool isManager)
         {
-            IsManager.isManager = isManager;
+            clsIsManager.isManager = isManager;
         }
     }
 }

@@ -16,5 +16,42 @@ namespace BiTiApp
         {
             InitializeComponent();
         }
+
+        private void frmKhachHang_Load(object sender, EventArgs e)
+        {
+            if (!clsIsManager.getIsManager())
+            {
+                ShowLimitedContent();
+            }
+        }
+        private void ShowLimitedContent()
+        {
+            btnQuanLy.Visible = false;
+        }
+
+        private void btnQuanLy_Click(object sender, EventArgs e)
+        {
+            clsFormSwitcher.SwitchForm("frmQuanLy", this);
+        }
+
+        private void btnSanpham_Click(object sender, EventArgs e)
+        {
+            clsFormSwitcher.SwitchForm("frmSanPham", this);
+        }
+
+        private void btnHoadon_Click(object sender, EventArgs e)
+        {
+            clsFormSwitcher.SwitchForm("frmHoaDon", this);
+        }
+
+        private void btnTaikhoang_Click(object sender, EventArgs e)
+        {
+            clsFormSwitcher.SwitchForm("frmTaiKhoan", this);
+        }
+
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            clsFormSwitcher.SwitchForm("frmLogin", this);
+        }
     }
 }
