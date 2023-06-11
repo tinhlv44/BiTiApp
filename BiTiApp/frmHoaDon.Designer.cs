@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvSQL = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.btnTaikhoang = new System.Windows.Forms.Button();
@@ -38,19 +39,19 @@
             this.btnSanpham = new System.Windows.Forms.Button();
             this.btnTaoHoaDon = new System.Windows.Forms.Button();
             this.txtSreach_TheoTenKH = new System.Windows.Forms.TextBox();
-            this.btnQuanLy = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvSQL
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(208, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(890, 486);
-            this.dataGridView1.TabIndex = 21;
+            this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvSQL.Location = new System.Drawing.Point(208, 105);
+            this.dtgvSQL.Name = "dtgvSQL";
+            this.dtgvSQL.Size = new System.Drawing.Size(890, 486);
+            this.dtgvSQL.TabIndex = 21;
             // 
             // panel1
             // 
@@ -67,6 +68,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 591);
             this.panel1.TabIndex = 20;
+            // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 27;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
             // pictureLogo
             // 
@@ -141,6 +153,7 @@
             this.btnTaoHoaDon.TabIndex = 25;
             this.btnTaoHoaDon.Text = "Tạo hóa đơn";
             this.btnTaoHoaDon.UseVisualStyleBackColor = true;
+            this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
             // 
             // txtSreach_TheoTenKH
             // 
@@ -150,17 +163,6 @@
             this.txtSreach_TheoTenKH.Size = new System.Drawing.Size(251, 32);
             this.txtSreach_TheoTenKH.TabIndex = 26;
             // 
-            // btnQuanLy
-            // 
-            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
-            this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
-            this.btnQuanLy.TabIndex = 27;
-            this.btnQuanLy.Text = "Quản lý";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
-            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
-            // 
             // frmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,12 +170,12 @@
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.btnTaoHoaDon);
             this.Controls.Add(this.txtSreach_TheoTenKH);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvSQL);
             this.Controls.Add(this.panel1);
             this.Name = "frmHoaDon";
             this.Text = "frmHoaDon";
             this.Load += new System.EventHandler(this.frmHoaDon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
@@ -183,7 +185,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvSQL;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureLogo;
         private System.Windows.Forms.Button btnDangxuat;

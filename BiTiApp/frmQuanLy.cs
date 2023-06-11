@@ -2,16 +2,24 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using Image = System.Drawing.Image;
 
 namespace BiTiApp
 {
     public partial class frmQuanLy : Form
     {
+        private DataTable dataTable = new DataTable();
+        private clsDatabaseConnection con = new clsDatabaseConnection();
         public frmQuanLy()
         {
             InitializeComponent();
@@ -40,6 +48,201 @@ namespace BiTiApp
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
             clsFormSwitcher.SwitchForm("frmLogin", this);
+        }
+
+        private void frmQuanLy_Load(object sender, EventArgs e)
+        {
+            dtgvSQLShow();
+            //Hiện icon ShowPass
+            string currentFolderPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString()+ @"\Images\icon_showpass.png";
+            Image image = Image.FromFile(currentFolderPath);
+            float aspectRatio = (float)image.Width / (float)image.Height;
+            int newWidth = btnShowPass.Height - 10;
+            int newHeight = (int)(newWidth / aspectRatio);
+            Image resizedImage = new Bitmap(image, newWidth, newHeight);
+            btnShowPass.ImageAlign = ContentAlignment.MiddleCenter;
+            btnShowPass.Image = resizedImage;
+            image.Dispose();
+            //Hiện icon search
+            currentFolderPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString() + @"\Images\icon_search.png";
+            image = Image.FromFile(currentFolderPath);
+            aspectRatio = (float)image.Width / (float)image.Height;
+            newWidth = btnSearch.Height - 10;
+            newHeight = (int)(newWidth / aspectRatio);
+            resizedImage = new Bitmap(image, newWidth, newHeight);
+            btnSearch.ImageAlign = ContentAlignment.MiddleCenter;
+            btnSearch.Image = resizedImage;
+            image.Dispose();
+        }
+        private void dtgvSQLShow()
+        {
+            dataTable.Clear();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT UserID, Name, [User/Email], Password, Addresss, Phone, IsManager FROM Userr", con.Open());
+            sqlDataAdapter.Fill(dataTable);
+            dtgvSQL.DataSource = dataTable;
+            dtgvSQL.Columns[0].HeaderText = "Mã nhân viên";
+            dtgvSQL.Columns[2].HeaderText = "Tài khoản";
+            dtgvSQL.Columns[3].Visible = false;
+            dtgvSQL.Columns[4].HeaderText = "Địa chỉ";
+            dtgvSQL.Columns[5].HeaderText = "Số điện thoại";
+            dtgvSQL.Columns[1].HeaderText = "Tên nhân viên";
+            con.Close();
+        }
+        private void dtgvSQL_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgvSQL.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dtgvSQL.SelectedRows[0];
+                txtHoTen.Text = selectedRow.Cells[1].Value.ToString();
+                txtEmail.Text = selectedRow.Cells[2].Value.ToString();
+                txtDiaChi.Text = selectedRow.Cells[4].Value.ToString();
+                txtSDT.Text = selectedRow.Cells[5].Value.ToString();
+                //txtMatKhau.Text = selectedRow.Cells[3].Value.ToString();
+                txtMatKhau.Text = "********";
+                if (selectedRow.Cells[6].Value.Equals(true))
+                {
+                    checkBox_QTri.Checked = true;
+                    checkBox_NV.Checked = false;
+                }
+                else
+                {
+                    checkBox_NV.Checked = true;
+                    checkBox_QTri.Checked = false;
+                }
+                txtEmail.ReadOnly = true;
+            }
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtHoTen.Text = "";
+            txtEmail.Text = "";
+            txtDiaChi.Text = "";
+            txtSDT.Text = "";
+            txtMatKhau.Text = "";
+            checkBox_NV.Checked = false;
+            checkBox_QTri.Checked = false;
+            txtEmail.ReadOnly = false;
+            dtgvSQLShow();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            //string insertQuery = "INSERT INTO userr ([User/Email],[Password],[Addresss],[Phone],[IsManager],[Name]) VALUES ('" + txtEmail.Text + "', '" + txtMatKhau.Text + "', n'" + txtDiaChi.Text + "', '" + txtSDT.Text + "', " + (checkBox_QTri.Checked == true ? 1 : 0) + ", n'" + txtHoTen.Text + "')";
+            string insertQuery = "INSERT INTO userr ([User/Email],[Password],[Addresss],[Phone],[IsManager],[Name]) VALUES (@c1, @c2, @c3, @c4, @c5, @c6)";
+            SqlCommand checkEmailCmd = new SqlCommand("SELECT COUNT([User/Email]) FROM userr WHERE [User/Email] = @email", con.Open());
+            checkEmailCmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            int emailCount = (int)checkEmailCmd.ExecuteScalar();
+
+            if (emailCount == 0)
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = insertQuery;
+                cmd.Connection = con.Open();
+                cmd.Parameters.AddWithValue("@c1", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@c2", txtMatKhau.Text);
+                cmd.Parameters.AddWithValue("@c3", txtDiaChi.Text);
+                cmd.Parameters.AddWithValue("@c4", txtSDT.Text);
+                cmd.Parameters.AddWithValue("@c5", (checkBox_QTri.Checked == true?1:0));
+                cmd.Parameters.AddWithValue("@c6", txtHoTen.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Đã tồn tại Email!");
+            }
+            dtgvSQLShow();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            SqlCommand checkEmailCmd = new SqlCommand("SELECT COUNT([User/Email]) FROM userr WHERE [User/Email] = @email", con.Open());
+            checkEmailCmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            int emailCount = (int)checkEmailCmd.ExecuteScalar();
+
+            if (emailCount != 0)
+            {
+                string deleteQuery = "DELETE FROM Userr WHERE [User/Email] = @email";
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = deleteQuery;
+                cmd.Connection = con.Open();
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa thành công");
+                con.Close();
+                dtgvSQLShow();
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại email!");
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            SqlCommand checkEmailCmd = new SqlCommand("SELECT COUNT([User/Email]) FROM userr WHERE [User/Email] = @email", con.Open());
+            checkEmailCmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            int emailCount = (int)checkEmailCmd.ExecuteScalar();
+
+            if (emailCount != 0)
+            {
+                string updateQuery = "UPDATE Userr SET [Password]=@c2,[Addresss]=@c3,[Phone]=@c4,[IsManager]=@c5,[Name]=@c6 WHERE [User/Email] = @c1";
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = updateQuery;
+                cmd.Connection = con.Open();
+                cmd.Parameters.AddWithValue("@c1", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@c2", txtMatKhau.Text);
+                cmd.Parameters.AddWithValue("@c3", txtDiaChi.Text);
+                cmd.Parameters.AddWithValue("@c4", txtSDT.Text);
+                cmd.Parameters.AddWithValue("@c5", (checkBox_QTri.Checked == true ? 1 : 0));
+                cmd.Parameters.AddWithValue("@c6", txtHoTen.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Sửa thành công");
+                con.Close();
+                dtgvSQLShow();
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại email!");
+            }
+        }
+
+        private void btnShowPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtMatKhau.Text = dtgvSQL.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void btnShowPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtMatKhau.Text = "********";
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SqlCommand checkEmailCmd = new SqlCommand("SELECT COUNT(Name) FROM userr WHERE Name LIKE @name", con.Open());
+            checkEmailCmd.Parameters.AddWithValue("@name", "%"+txtSreachTenNV.Text+"%");
+            int emailCount = (int)checkEmailCmd.ExecuteScalar();
+
+            if (emailCount != 0)
+            {
+                dataTable.Clear();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT UserID, Name, [User/Email], Password, Addresss, Phone, IsManager FROM userr WHERE Name LIKE '%"+txtSreachTenNV.Text+"%'", con.Open());
+                sqlDataAdapter.Fill(dataTable);
+                dtgvSQL.DataSource = dataTable;
+                dtgvSQL.Columns[0].HeaderText = "Mã nhân viên";
+                dtgvSQL.Columns[2].HeaderText = "Tài khoản";
+                dtgvSQL.Columns[3].Visible = false;
+                dtgvSQL.Columns[4].HeaderText = "Địa chỉ";
+                dtgvSQL.Columns[5].HeaderText = "Số điện thoại";
+                dtgvSQL.Columns[1].HeaderText = "Tên nhân viên";
+                con.Close();            
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy!");
+            }
         }
     }
 }

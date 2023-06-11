@@ -15,6 +15,7 @@ namespace BiTiApp
     public partial class frmSanPham : Form
     {
         private DataTable dataTable = new DataTable();
+        private clsDatabaseConnection con = new clsDatabaseConnection();
         public frmSanPham()
         {
             InitializeComponent();
@@ -25,7 +26,11 @@ namespace BiTiApp
             {
                 ShowLimitedContent();
             }
-            clsDatabaseConnection con = new clsDatabaseConnection();
+            dtgvSQLShow();
+        }
+        private void dtgvSQLShow()
+        {
+            dataTable.Clear();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT * FROM Product", con.Open());
             sqlDataAdapter.Fill(dataTable);
             dtgvSQL.DataSource = dataTable;
@@ -75,7 +80,100 @@ namespace BiTiApp
                 txtSoLuong.Text = selectedRow.Cells[2].Value.ToString();
                 txtDonGiaBan.Text = selectedRow.Cells[3].Value.ToString();
                 txtGhiChu.Text = selectedRow.Cells[4].Value.ToString();
+                txtMaSP.ReadOnly = true;
             }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string insertQuery = "INSERT INTO Product ([ProductID],[ProductName],[Inventory],[ProductPrice],[Note]) VALUES (@c1, @c2, @c3, @c4, @c5)";
+            SqlCommand checkCmd = new SqlCommand("SELECT COUNT([ProductID]) FROM Product WHERE [ProductID] = @ProductID", con.Open());
+            checkCmd.Parameters.AddWithValue("@ProductID", txtMaSP.Text);
+            int Count = (int)checkCmd.ExecuteScalar();
+
+            if (Count == 0)
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = insertQuery;
+                cmd.Connection = con.Open();
+                cmd.Parameters.AddWithValue("@c1", txtMaSP.Text);
+                cmd.Parameters.AddWithValue("@c2", txtTenSP.Text);
+                cmd.Parameters.AddWithValue("@c3", txtSoLuong.Text);
+                cmd.Parameters.AddWithValue("@c4", txtDonGiaBan.Text);
+                cmd.Parameters.AddWithValue("@c5", txtGhiChu.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
+                con.Close();
+                dtgvSQLShow();
+            }
+            else
+            {
+                MessageBox.Show("Đã tồn tại Sản phảm có mã này!");
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            SqlCommand checkCmd = new SqlCommand("SELECT COUNT([ProductID]) FROM Product WHERE [ProductID] = @ProductID", con.Open());
+            checkCmd.Parameters.AddWithValue("@ProductID", txtMaSP.Text);
+            int Count = (int)checkCmd.ExecuteScalar();
+
+            if (Count != 0)
+            {
+                string deleteQuery = "DELETE FROM Product WHERE [ProductID] = @ProductID";
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = deleteQuery;
+                cmd.Connection = con.Open();
+                cmd.Parameters.AddWithValue("@ProductID", txtMaSP.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa thành công");
+                con.Close();
+                dtgvSQLShow();
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại Mã SP!");
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            SqlCommand checkCmd = new SqlCommand("SELECT COUNT([ProductID]) FROM Product WHERE [ProductID] = @ProductID", con.Open());
+            checkCmd.Parameters.AddWithValue("@ProductID", txtMaSP.Text);
+            int Count = (int)checkCmd.ExecuteScalar();
+
+            if (Count != 0)
+            {
+                string updateQuery = "UPDATE Product SET [ProductName]=@c2,[Inventory]=@c3,[ProductPrice]=@c4,[Note]=@c5 WHERE [ProductID] = @ProductID";
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = updateQuery;
+                cmd.Connection = con.Open();
+                cmd.Parameters.AddWithValue("@ProductID", txtMaSP.Text);
+                cmd.Parameters.AddWithValue("@c2", txtTenSP.Text);
+                cmd.Parameters.AddWithValue("@c3", txtSoLuong.Text);
+                cmd.Parameters.AddWithValue("@c4", txtDonGiaBan.Text);
+                cmd.Parameters.AddWithValue("@c5", txtGhiChu.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Sửa thành công");
+                con.Close();
+                dtgvSQLShow();
+            }
+            else
+            {
+                MessageBox.Show("Không tồn tại Mã SP!");
+            }
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaSP.Text = "";
+            txtTenSP.Text = "";
+            txtSoLuong.Text = "";
+            txtDonGiaBan.Text = "";
+            txtGhiChu.Text = "";
+            txtSreach.Text = "";
+            txtMaSP.ReadOnly = false;
+            dtgvSQLShow();
         }
     }
 }

@@ -16,5 +16,10 @@ namespace BiTiApp
         {
             InitializeComponent();
         }
+
+        private void frmChiTietHoaDon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

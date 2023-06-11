@@ -158,5 +158,8 @@
   <ItemGroup>
     <None Include="Resources\logoBiTi.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\icon_showpass.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

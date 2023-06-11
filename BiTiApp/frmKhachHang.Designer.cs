@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuanLy = new System.Windows.Forms.Button();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.btnTaikhoang = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvSQL = new System.Windows.Forms.DataGridView();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
@@ -49,10 +50,10 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.lblSDT = new System.Windows.Forms.Label();
-            this.btnQuanLy = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,6 +71,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 591);
             this.panel1.TabIndex = 2;
+            // 
+            // btnQuanLy
+            // 
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
+            this.btnQuanLy.Name = "btnQuanLy";
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.TabIndex = 19;
+            this.btnQuanLy.Text = "Quản lý";
+            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
             // pictureLogo
             // 
@@ -138,16 +150,17 @@
             // btnLamMoi
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(718, 196);
+            this.btnLamMoi.Location = new System.Drawing.Point(718, 198);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 46);
             this.btnLamMoi.TabIndex = 23;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // txtSreachTenKH
             // 
-            this.txtSreachTenKH.Location = new System.Drawing.Point(881, 205);
+            this.txtSreachTenKH.Location = new System.Drawing.Point(906, 213);
             this.txtSreachTenKH.Multiline = true;
             this.txtSreachTenKH.Name = "txtSreachTenKH";
             this.txtSreachTenKH.Size = new System.Drawing.Size(190, 28);
@@ -156,40 +169,45 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(555, 196);
+            this.btnSua.Location = new System.Drawing.Point(555, 198);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(137, 46);
             this.btnSua.TabIndex = 22;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(392, 196);
+            this.btnXoa.Location = new System.Drawing.Point(392, 198);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 46);
             this.btnXoa.TabIndex = 21;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(229, 196);
+            this.btnThem.Location = new System.Drawing.Point(229, 198);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 46);
             this.btnThem.TabIndex = 20;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // dataGridView1
+            // dtgvSQL
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(206, 260);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(890, 331);
-            this.dataGridView1.TabIndex = 19;
+            this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvSQL.Location = new System.Drawing.Point(206, 260);
+            this.dtgvSQL.Name = "dtgvSQL";
+            this.dtgvSQL.Size = new System.Drawing.Size(890, 331);
+            this.dtgvSQL.TabIndex = 19;
+            this.dtgvSQL.SelectionChanged += new System.EventHandler(this.dtgvSQL_SelectionChanged);
             // 
             // txtDiaChi
             // 
@@ -263,22 +281,21 @@
             this.lblSDT.TabIndex = 32;
             this.lblSDT.Text = "Số điện thoại";
             // 
-            // btnQuanLy
+            // btnSearch
             // 
-            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
-            this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
-            this.btnQuanLy.TabIndex = 19;
-            this.btnQuanLy.Text = "Quản lý";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
-            this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
+            this.btnSearch.Location = new System.Drawing.Point(872, 213);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(30, 28);
+            this.btnSearch.TabIndex = 53;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 591);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.lblSDT);
             this.Controls.Add(this.lblDiaChi);
             this.Controls.Add(this.lblHoTen);
@@ -292,14 +309,14 @@
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvSQL);
             this.Controls.Add(this.panel1);
             this.Name = "frmKhachHang";
             this.Text = "frmKhachHang";
             this.Load += new System.EventHandler(this.frmKhachHang_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,7 +336,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvSQL;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.TextBox txtHoTen;
@@ -329,5 +346,6 @@
         private System.Windows.Forms.Label lblDiaChi;
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Button btnQuanLy;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
