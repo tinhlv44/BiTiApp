@@ -53,46 +53,56 @@
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(175)))), ((int)(((byte)(194)))));
+            this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.Location = new System.Drawing.Point(912, 202);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 46);
             this.btnLamMoi.TabIndex = 13;
             this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(175)))), ((int)(((byte)(194)))));
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Location = new System.Drawing.Point(912, 142);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(137, 46);
             this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(175)))), ((int)(((byte)(194)))));
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Location = new System.Drawing.Point(912, 84);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 46);
             this.btnXoa.TabIndex = 11;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(175)))), ((int)(((byte)(194)))));
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Location = new System.Drawing.Point(912, 25);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 46);
             this.btnThem.TabIndex = 10;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             // 
             // txtMaNVvaTenNV
             // 
+            this.txtMaNVvaTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtMaNVvaTenNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaNVvaTenNV.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaNVvaTenNV.Location = new System.Drawing.Point(91, 74);
             this.txtMaNVvaTenNV.Multiline = true;
@@ -172,6 +182,8 @@
             // 
             // txtMaKHvaTenKH
             // 
+            this.txtMaKHvaTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtMaKHvaTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaKHvaTenKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaKHvaTenKH.Location = new System.Drawing.Point(91, 137);
             this.txtMaKHvaTenKH.Multiline = true;
@@ -181,6 +193,8 @@
             // 
             // txtThoiGian
             // 
+            this.txtThoiGian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtThoiGian.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThoiGian.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtThoiGian.Location = new System.Drawing.Point(91, 196);
             this.txtThoiGian.Multiline = true;
@@ -190,6 +204,8 @@
             // 
             // txtThanhTien
             // 
+            this.txtThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtThanhTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThanhTien.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtThanhTien.Location = new System.Drawing.Point(361, 196);
             this.txtThanhTien.Multiline = true;
@@ -199,6 +215,8 @@
             // 
             // txtDonGia
             // 
+            this.txtDonGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtDonGia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDonGia.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDonGia.Location = new System.Drawing.Point(361, 137);
             this.txtDonGia.Multiline = true;
@@ -208,6 +226,8 @@
             // 
             // txtSoLuong
             // 
+            this.txtSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoLuong.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSoLuong.Location = new System.Drawing.Point(495, 137);
             this.txtSoLuong.Multiline = true;
@@ -217,6 +237,8 @@
             // 
             // txtTenSPvaTonKho
             // 
+            this.txtTenSPvaTonKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtTenSPvaTonKho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenSPvaTonKho.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtTenSPvaTonKho.Location = new System.Drawing.Point(361, 74);
             this.txtTenSPvaTonKho.Multiline = true;
@@ -226,13 +248,15 @@
             // 
             // btnThanhToan
             // 
+            this.btnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(175)))), ((int)(((byte)(194)))));
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhToan.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.Location = new System.Drawing.Point(573, 202);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(137, 46);
             this.btnThanhToan.TabIndex = 32;
             this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 

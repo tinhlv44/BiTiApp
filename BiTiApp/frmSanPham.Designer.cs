@@ -236,6 +236,8 @@
             // 
             // txtMaSP
             // 
+            this.txtMaSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtMaSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaSP.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSP.Location = new System.Drawing.Point(248, 67);
             this.txtMaSP.Multiline = true;
@@ -245,6 +247,8 @@
             // 
             // txtTenSP
             // 
+            this.txtTenSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtTenSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenSP.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtTenSP.Location = new System.Drawing.Point(344, 67);
             this.txtTenSP.Multiline = true;
@@ -254,6 +258,8 @@
             // 
             // txtSoLuong
             // 
+            this.txtSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoLuong.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.Location = new System.Drawing.Point(248, 149);
             this.txtSoLuong.Multiline = true;
@@ -263,6 +269,8 @@
             // 
             // txtDonGiaNhap
             // 
+            this.txtDonGiaNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtDonGiaNhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDonGiaNhap.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDonGiaNhap.Location = new System.Drawing.Point(344, 149);
             this.txtDonGiaNhap.Multiline = true;
@@ -272,6 +280,8 @@
             // 
             // txtDonGiaBan
             // 
+            this.txtDonGiaBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtDonGiaBan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDonGiaBan.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDonGiaBan.Location = new System.Drawing.Point(487, 149);
             this.txtDonGiaBan.Multiline = true;
@@ -281,6 +291,8 @@
             // 
             // txtGhiChu
             // 
+            this.txtGhiChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtGhiChu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGhiChu.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtGhiChu.Location = new System.Drawing.Point(344, 189);
             this.txtGhiChu.Multiline = true;
@@ -300,6 +312,7 @@
             // 
             // pictureAnh
             // 
+            this.pictureAnh.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.pictureAnh.Location = new System.Drawing.Point(755, 38);
             this.pictureAnh.Name = "pictureAnh";
             this.pictureAnh.Size = new System.Drawing.Size(280, 151);
@@ -308,16 +321,19 @@
             // 
             // btnChonAnh
             // 
+            this.btnChonAnh.BackColor = System.Drawing.Color.Bisque;
             this.btnChonAnh.FlatAppearance.BorderSize = 0;
             this.btnChonAnh.Location = new System.Drawing.Point(842, 195);
             this.btnChonAnh.Name = "btnChonAnh";
             this.btnChonAnh.Size = new System.Drawing.Size(107, 34);
             this.btnChonAnh.TabIndex = 17;
             this.btnChonAnh.Text = "Chọn ảnh";
-            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.UseVisualStyleBackColor = false;
             // 
             // txtSreach
             // 
+            this.txtSreach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(209)))), ((int)(((byte)(245)))));
+            this.txtSreach.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreach.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSreach.Location = new System.Drawing.Point(899, 286);
             this.txtSreach.Multiline = true;
@@ -329,6 +345,7 @@
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(174)))), ((int)(((byte)(202)))));
             this.btnLamMoi.FlatAppearance.BorderSize = 0;
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.Location = new System.Drawing.Point(720, 257);
@@ -336,13 +353,14 @@
             this.btnLamMoi.Size = new System.Drawing.Size(137, 46);
             this.btnLamMoi.TabIndex = 9;
             this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             this.btnLamMoi.MouseEnter += new System.EventHandler(this.btnLamMoi_MouseEnter);
             this.btnLamMoi.MouseLeave += new System.EventHandler(this.btnLamMoi_MouseLeave);
             // 
             // btnSua
             // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(174)))), ((int)(((byte)(202)))));
             this.btnSua.FlatAppearance.BorderSize = 0;
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Location = new System.Drawing.Point(563, 257);
@@ -350,13 +368,14 @@
             this.btnSua.Size = new System.Drawing.Size(137, 46);
             this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             this.btnSua.MouseEnter += new System.EventHandler(this.btnSua_MouseEnter);
             this.btnSua.MouseLeave += new System.EventHandler(this.btnSua_MouseLeave);
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(174)))), ((int)(((byte)(202)))));
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Location = new System.Drawing.Point(404, 257);
@@ -364,14 +383,14 @@
             this.btnXoa.Size = new System.Drawing.Size(137, 46);
             this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             this.btnXoa.MouseEnter += new System.EventHandler(this.btnXoa_MouseEnter);
             this.btnXoa.MouseLeave += new System.EventHandler(this.btnXoa_MouseLeave);
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.White;
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(174)))), ((int)(((byte)(202)))));
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Location = new System.Drawing.Point(248, 257);

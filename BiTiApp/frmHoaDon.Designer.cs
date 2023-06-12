@@ -172,6 +172,8 @@
             // 
             // txtSreach_TheoTenKH
             // 
+            this.txtSreach_TheoTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtSreach_TheoTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreach_TheoTenKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSreach_TheoTenKH.Location = new System.Drawing.Point(429, 38);
             this.txtSreach_TheoTenKH.Multiline = true;

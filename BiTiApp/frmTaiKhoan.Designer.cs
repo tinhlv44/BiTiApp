@@ -252,7 +252,10 @@
             // 
             // txtHoTen
             // 
+            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.txtHoTen.ForeColor = System.Drawing.Color.Black;
             this.txtHoTen.Location = new System.Drawing.Point(391, 161);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
@@ -261,6 +264,8 @@
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(391, 225);
             this.txtDiaChi.Multiline = true;
@@ -270,6 +275,8 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSDT.Location = new System.Drawing.Point(391, 284);
             this.txtSDT.Multiline = true;
@@ -279,6 +286,8 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtEmail.Location = new System.Drawing.Point(391, 341);
             this.txtEmail.Multiline = true;
@@ -288,6 +297,8 @@
             // 
             // txtNhapLaiMatKhau
             // 
+            this.txtNhapLaiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtNhapLaiMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNhapLaiMatKhau.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtNhapLaiMatKhau.Location = new System.Drawing.Point(824, 284);
             this.txtNhapLaiMatKhau.Multiline = true;
@@ -297,6 +308,8 @@
             // 
             // txtMatKhauMoi
             // 
+            this.txtMatKhauMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtMatKhauMoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhauMoi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMatKhauMoi.Location = new System.Drawing.Point(824, 225);
             this.txtMatKhauMoi.Multiline = true;
@@ -306,6 +319,8 @@
             // 
             // txtMatKhauCu
             // 
+            this.txtMatKhauCu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(227)))), ((int)(((byte)(195)))));
+            this.txtMatKhauCu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhauCu.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMatKhauCu.Location = new System.Drawing.Point(824, 161);
             this.txtMatKhauCu.Multiline = true;

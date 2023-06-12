@@ -217,6 +217,8 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSDT.Location = new System.Drawing.Point(755, 92);
             this.txtSDT.Multiline = true;
@@ -226,6 +228,8 @@
             // 
             // txtHoTen
             // 
+            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(373, 31);
             this.txtHoTen.Multiline = true;
@@ -235,6 +239,8 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtEmail.Location = new System.Drawing.Point(373, 92);
             this.txtEmail.Multiline = true;
@@ -244,6 +250,8 @@
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(755, 31);
             this.txtDiaChi.Multiline = true;
@@ -267,6 +275,8 @@
             // 
             // txtSreachTenNV
             // 
+            this.txtSreachTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSreachTenNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreachTenNV.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSreachTenNV.Location = new System.Drawing.Point(906, 214);
             this.txtSreachTenNV.Multiline = true;
@@ -362,6 +372,8 @@
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhau.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMatKhau.Location = new System.Drawing.Point(755, 150);
             this.txtMatKhau.Multiline = true;
@@ -372,9 +384,8 @@
             // ptbSearch
             // 
             this.ptbSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.ptbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbSearch.Image = global::BiTiApp.Properties.Resources.icon_search;
-            this.ptbSearch.Location = new System.Drawing.Point(870, 214);
+            this.ptbSearch.Location = new System.Drawing.Point(1066, 214);
             this.ptbSearch.Name = "ptbSearch";
             this.ptbSearch.Size = new System.Drawing.Size(30, 28);
             this.ptbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -386,9 +397,8 @@
             // 
             // ptbShowPass
             // 
-            this.ptbShowPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ptbShowPass.Image = global::BiTiApp.Properties.Resources.hidepass;
-            this.ptbShowPass.Location = new System.Drawing.Point(962, 150);
+            this.ptbShowPass.Location = new System.Drawing.Point(955, 150);
             this.ptbShowPass.Name = "ptbShowPass";
             this.ptbShowPass.Size = new System.Drawing.Size(30, 28);
             this.ptbShowPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

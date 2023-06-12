@@ -173,6 +173,8 @@
             // 
             // txtSreachTenKH
             // 
+            this.txtSreachTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtSreachTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreachTenKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSreachTenKH.Location = new System.Drawing.Point(906, 213);
             this.txtSreachTenKH.Multiline = true;
@@ -234,6 +236,8 @@
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(712, 47);
             this.txtDiaChi.Multiline = true;
@@ -243,6 +247,8 @@
             // 
             // txtMaKH
             // 
+            this.txtMaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtMaKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaKH.Location = new System.Drawing.Point(373, 47);
             this.txtMaKH.Multiline = true;
@@ -252,6 +258,8 @@
             // 
             // txtHoTen
             // 
+            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(373, 108);
             this.txtHoTen.Multiline = true;
@@ -261,6 +269,9 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSDT.Location = new System.Drawing.Point(712, 108);
             this.txtSDT.Multiline = true;
@@ -310,10 +321,9 @@
             // 
             // ptbSearch
             // 
-            this.ptbSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ptbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ptbSearch.Image = global::BiTiApp.Properties.Resources.icon_search;
-            this.ptbSearch.Location = new System.Drawing.Point(876, 213);
+            this.ptbSearch.Location = new System.Drawing.Point(1066, 213);
             this.ptbSearch.Name = "ptbSearch";
             this.ptbSearch.Size = new System.Drawing.Size(30, 28);
             this.ptbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
