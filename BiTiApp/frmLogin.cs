@@ -95,8 +95,8 @@ namespace BiTiApp
             if (txt.Text == "Mật khẩu")
             {
                 txt.Text = "";
-                txtMatKhau_DangNhap.PasswordChar = '*';
             }
+            txtMatKhau_DangNhap.PasswordChar = '*';
         }
 
         private void txtNhapLai_MatKhau_Dky_Click(object sender, EventArgs e)
@@ -118,6 +118,11 @@ namespace BiTiApp
             {
                 txtMatKhau_DangNhap.PasswordChar = '*';
             }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }   
