@@ -54,7 +54,7 @@
             // btnLamMoi
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(820, 204);
+            this.btnLamMoi.Location = new System.Drawing.Point(912, 202);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 46);
             this.btnLamMoi.TabIndex = 13;
@@ -64,7 +64,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(820, 144);
+            this.btnSua.Location = new System.Drawing.Point(912, 142);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(137, 46);
             this.btnSua.TabIndex = 12;
@@ -74,7 +74,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(820, 86);
+            this.btnXoa.Location = new System.Drawing.Point(912, 84);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 46);
             this.btnXoa.TabIndex = 11;
@@ -84,7 +84,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(820, 27);
+            this.btnThem.Location = new System.Drawing.Point(912, 25);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 46);
             this.btnThem.TabIndex = 10;
@@ -93,6 +93,7 @@
             // 
             // txtMaNVvaTenNV
             // 
+            this.txtMaNVvaTenNV.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaNVvaTenNV.Location = new System.Drawing.Point(91, 74);
             this.txtMaNVvaTenNV.Multiline = true;
             this.txtMaNVvaTenNV.Name = "txtMaNVvaTenNV";
@@ -171,6 +172,7 @@
             // 
             // txtMaKHvaTenKH
             // 
+            this.txtMaKHvaTenKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaKHvaTenKH.Location = new System.Drawing.Point(91, 137);
             this.txtMaKHvaTenKH.Multiline = true;
             this.txtMaKHvaTenKH.Name = "txtMaKHvaTenKH";
@@ -179,6 +181,7 @@
             // 
             // txtThoiGian
             // 
+            this.txtThoiGian.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtThoiGian.Location = new System.Drawing.Point(91, 196);
             this.txtThoiGian.Multiline = true;
             this.txtThoiGian.Name = "txtThoiGian";
@@ -187,6 +190,7 @@
             // 
             // txtThanhTien
             // 
+            this.txtThanhTien.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtThanhTien.Location = new System.Drawing.Point(361, 196);
             this.txtThanhTien.Multiline = true;
             this.txtThanhTien.Name = "txtThanhTien";
@@ -195,6 +199,7 @@
             // 
             // txtDonGia
             // 
+            this.txtDonGia.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDonGia.Location = new System.Drawing.Point(361, 137);
             this.txtDonGia.Multiline = true;
             this.txtDonGia.Name = "txtDonGia";
@@ -203,6 +208,7 @@
             // 
             // txtSoLuong
             // 
+            this.txtSoLuong.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSoLuong.Location = new System.Drawing.Point(495, 137);
             this.txtSoLuong.Multiline = true;
             this.txtSoLuong.Name = "txtSoLuong";
@@ -211,6 +217,7 @@
             // 
             // txtTenSPvaTonKho
             // 
+            this.txtTenSPvaTonKho.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtTenSPvaTonKho.Location = new System.Drawing.Point(361, 74);
             this.txtTenSPvaTonKho.Multiline = true;
             this.txtTenSPvaTonKho.Name = "txtTenSPvaTonKho";
@@ -220,7 +227,7 @@
             // btnThanhToan
             // 
             this.btnThanhToan.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan.Location = new System.Drawing.Point(579, 176);
+            this.btnThanhToan.Location = new System.Drawing.Point(573, 202);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(137, 46);
             this.btnThanhToan.TabIndex = 32;
@@ -229,6 +236,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(101)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 268);
             this.dataGridView1.Name = "dataGridView1";
@@ -239,6 +247,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnThanhToan);

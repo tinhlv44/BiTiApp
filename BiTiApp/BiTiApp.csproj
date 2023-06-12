@@ -170,5 +170,8 @@
   <ItemGroup>
     <None Include="bin\Debug\Images\icon_search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconTK.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

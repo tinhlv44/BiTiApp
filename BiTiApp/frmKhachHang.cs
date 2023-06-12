@@ -206,5 +206,55 @@ namespace BiTiApp
         {
             ptbSearch.BackColor = SystemColors.Control;
         }
+        //Đổi màu button
+        private void btnThem_MouseEnter(object sender, EventArgs e)
+        {
+            btnThem.BackColor = Color.FromArgb(181, 172, 7);
+        }
+
+        private void btnThem_MouseLeave(object sender, EventArgs e)
+        {
+            btnThem.BackColor = SystemColors.Control;
+        }
+
+        private void btnXoa_MouseEnter(object sender, EventArgs e)
+        {
+            btnXoa.BackColor = Color.FromArgb(181, 172, 7);
+        }
+
+        private void btnXoa_MouseLeave(object sender, EventArgs e)
+        {
+            btnXoa.BackColor = SystemColors.Control;
+        }
+
+        private void btnSua_MouseEnter(object sender, EventArgs e)
+        {
+            btnSua.BackColor = Color.FromArgb(181, 172, 7);
+        }
+
+        private void btnSua_MouseLeave(object sender, EventArgs e)
+        {
+            btnSua.BackColor = SystemColors.Control;
+        }
+
+        private void btnLamMoi_MouseEnter(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = Color.FromArgb(181, 172, 7);
+        }
+
+        private void btnLamMoi_MouseLeave(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = SystemColors.Control;
+        }
+
+        private void txtSreachTenKH_MouseEnter(object sender, EventArgs e)
+        {
+            txtSreachTenKH.BackColor = Color.FromArgb(163, 175, 204);
+        }
+
+        private void txtSreachTenKH_MouseLeave(object sender, EventArgs e)
+        {
+            txtSreachTenKH.BackColor = SystemColors.Control;
+        }
     }
 }

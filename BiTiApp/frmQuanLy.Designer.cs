@@ -66,7 +66,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(66)))), ((int)(((byte)(63)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(21)))), ((int)(((byte)(212)))));
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
@@ -82,13 +82,16 @@
             // 
             // btnQuanLy
             // 
+            this.btnQuanLy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.btnQuanLy.FlatAppearance.BorderSize = 0;
+            this.btnQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
             this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
+            this.btnQuanLy.Size = new System.Drawing.Size(200, 54);
             this.btnQuanLy.TabIndex = 6;
             this.btnQuanLy.Text = "Quản lý";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.UseVisualStyleBackColor = false;
             // 
             // pictureLogo
             // 
@@ -102,6 +105,8 @@
             // 
             // btnDangxuat
             // 
+            this.btnDangxuat.FlatAppearance.BorderSize = 0;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangxuat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangxuat.Location = new System.Drawing.Point(0, 542);
             this.btnDangxuat.Name = "btnDangxuat";
@@ -113,8 +118,9 @@
             // 
             // btnTaikhoang
             // 
+            this.btnTaikhoang.FlatAppearance.BorderSize = 0;
             this.btnTaikhoang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaikhoang.Location = new System.Drawing.Point(0, 334);
+            this.btnTaikhoang.Location = new System.Drawing.Point(0, 350);
             this.btnTaikhoang.Name = "btnTaikhoang";
             this.btnTaikhoang.Size = new System.Drawing.Size(200, 38);
             this.btnTaikhoang.TabIndex = 3;
@@ -124,8 +130,9 @@
             // 
             // btnHoadon
             // 
+            this.btnHoadon.FlatAppearance.BorderSize = 0;
             this.btnHoadon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoadon.Location = new System.Drawing.Point(0, 297);
+            this.btnHoadon.Location = new System.Drawing.Point(0, 313);
             this.btnHoadon.Name = "btnHoadon";
             this.btnHoadon.Size = new System.Drawing.Size(200, 38);
             this.btnHoadon.TabIndex = 2;
@@ -135,8 +142,9 @@
             // 
             // btnKhachhang
             // 
+            this.btnKhachhang.FlatAppearance.BorderSize = 0;
             this.btnKhachhang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhachhang.Location = new System.Drawing.Point(0, 260);
+            this.btnKhachhang.Location = new System.Drawing.Point(0, 276);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.Size = new System.Drawing.Size(200, 38);
             this.btnKhachhang.TabIndex = 1;
@@ -146,8 +154,9 @@
             // 
             // btnSanpham
             // 
+            this.btnSanpham.FlatAppearance.BorderSize = 0;
             this.btnSanpham.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSanpham.Location = new System.Drawing.Point(0, 223);
+            this.btnSanpham.Location = new System.Drawing.Point(0, 239);
             this.btnSanpham.Name = "btnSanpham";
             this.btnSanpham.Size = new System.Drawing.Size(200, 38);
             this.btnSanpham.TabIndex = 0;
@@ -158,6 +167,7 @@
             // dtgvSQL
             // 
             this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(5)))), ((int)(((byte)(176)))));
             this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSQL.Location = new System.Drawing.Point(206, 260);
             this.dtgvSQL.Name = "dtgvSQL";
@@ -207,6 +217,7 @@
             // 
             // txtSDT
             // 
+            this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSDT.Location = new System.Drawing.Point(755, 92);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
@@ -215,6 +226,7 @@
             // 
             // txtHoTen
             // 
+            this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(373, 31);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
@@ -223,6 +235,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtEmail.Location = new System.Drawing.Point(373, 92);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -231,6 +244,7 @@
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(755, 31);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
@@ -239,6 +253,7 @@
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.FlatAppearance.BorderSize = 0;
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.Location = new System.Drawing.Point(719, 199);
             this.btnLamMoi.Name = "btnLamMoi";
@@ -247,17 +262,23 @@
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = true;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            this.btnLamMoi.MouseEnter += new System.EventHandler(this.btnLamMoi_MouseEnter);
+            this.btnLamMoi.MouseLeave += new System.EventHandler(this.btnLamMoi_MouseLeave);
             // 
             // txtSreachTenNV
             // 
+            this.txtSreachTenNV.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSreachTenNV.Location = new System.Drawing.Point(906, 214);
             this.txtSreachTenNV.Multiline = true;
             this.txtSreachTenNV.Name = "txtSreachTenNV";
             this.txtSreachTenNV.Size = new System.Drawing.Size(190, 28);
             this.txtSreachTenNV.TabIndex = 37;
+            this.txtSreachTenNV.MouseEnter += new System.EventHandler(this.txtSreachTenNV_MouseEnter);
+            this.txtSreachTenNV.MouseLeave += new System.EventHandler(this.txtSreachTenNV_MouseLeave);
             // 
             // btnSua
             // 
+            this.btnSua.FlatAppearance.BorderSize = 0;
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Location = new System.Drawing.Point(556, 199);
             this.btnSua.Name = "btnSua";
@@ -266,9 +287,12 @@
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.btnSua.MouseEnter += new System.EventHandler(this.btnSua_MouseEnter);
+            this.btnSua.MouseLeave += new System.EventHandler(this.btnSua_MouseLeave);
             // 
             // btnXoa
             // 
+            this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Location = new System.Drawing.Point(393, 199);
             this.btnXoa.Name = "btnXoa";
@@ -277,9 +301,12 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXoa.MouseEnter += new System.EventHandler(this.btnXoa_MouseEnter);
+            this.btnXoa.MouseLeave += new System.EventHandler(this.btnXoa_MouseLeave);
             // 
             // btnThem
             // 
+            this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Location = new System.Drawing.Point(230, 199);
             this.btnThem.Name = "btnThem";
@@ -288,6 +315,8 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnThem.MouseEnter += new System.EventHandler(this.btnThem_MouseEnter);
+            this.btnThem.MouseLeave += new System.EventHandler(this.btnThem_MouseLeave);
             // 
             // lblVaiTro
             // 
@@ -302,9 +331,10 @@
             // checkBox_NV
             // 
             this.checkBox_NV.AutoSize = true;
+            this.checkBox_NV.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_NV.Location = new System.Drawing.Point(393, 152);
             this.checkBox_NV.Name = "checkBox_NV";
-            this.checkBox_NV.Size = new System.Drawing.Size(75, 17);
+            this.checkBox_NV.Size = new System.Drawing.Size(81, 19);
             this.checkBox_NV.TabIndex = 47;
             this.checkBox_NV.Text = "Nhân viên";
             this.checkBox_NV.UseVisualStyleBackColor = true;
@@ -312,9 +342,10 @@
             // checkBox_QTri
             // 
             this.checkBox_QTri.AutoSize = true;
+            this.checkBox_QTri.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_QTri.Location = new System.Drawing.Point(483, 152);
             this.checkBox_QTri.Name = "checkBox_QTri";
-            this.checkBox_QTri.Size = new System.Drawing.Size(63, 17);
+            this.checkBox_QTri.Size = new System.Drawing.Size(69, 19);
             this.checkBox_QTri.TabIndex = 48;
             this.checkBox_QTri.Text = "Quản trị";
             this.checkBox_QTri.UseVisualStyleBackColor = true;
@@ -331,6 +362,7 @@
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMatKhau.Location = new System.Drawing.Point(755, 150);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
@@ -369,6 +401,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.ptbSearch);
             this.Controls.Add(this.ptbShowPass);

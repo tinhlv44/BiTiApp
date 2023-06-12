@@ -53,5 +53,36 @@ namespace BiTiApp
         {
             clsFormSwitcher.SwitchForm("frmLogin", this);
         }
+
+        //Đổi màu button khi lia chuột
+        private void btnSua_MouseEnter(object sender, EventArgs e)
+        {
+            btnSua.BackColor = Color.FromArgb(100, 200, 50);
+        }
+
+        private void btnSua_MouseLeave(object sender, EventArgs e)
+        {
+            btnSua.BackColor = SystemColors.Control;
+        }
+
+        private void btnLamMoi_MouseEnter(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = Color.FromArgb(100, 200, 50);
+        }
+
+        private void btnLamMoi_MouseLeave(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = SystemColors.Control;
+        }
+
+        private void btnDoiMatKhau_MouseEnter(object sender, EventArgs e)
+        {
+            btnDoiMatKhau.BackColor = Color.FromArgb(100, 200, 50);
+        }
+
+        private void btnDoiMatKhau_MouseLeave(object sender, EventArgs e)
+        {
+            btnDoiMatKhau.BackColor = SystemColors.Control;
+        }
     }
 }

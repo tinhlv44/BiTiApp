@@ -74,5 +74,27 @@ namespace BiTiApp
         {
             clsFormSwitcher.SwitchForm("frmChiTietHoaDon", this);
         }
+        //đổi màu button
+        private void btnTaoHoaDon_MouseEnter(object sender, EventArgs e)
+        {
+            btnTaoHoaDon.BackColor = Color.FromArgb(166, 101, 126);
+            btnTaoHoaDon.ForeColor = Color.White;
+        }
+
+        private void btnTaoHoaDon_MouseLeave(object sender, EventArgs e)
+        {
+            btnTaoHoaDon.BackColor = SystemColors.Control;
+            btnTaoHoaDon.ForeColor = SystemColors.ControlText;
+        }
+
+        private void txtSreach_TheoTenKH_MouseEnter(object sender, EventArgs e)
+        {
+            txtSreach_TheoTenKH.BackColor = Color.FromArgb(163, 175, 204);
+        }
+
+        private void txtSreach_TheoTenKH_MouseLeave(object sender, EventArgs e)
+        {
+            txtSreach_TheoTenKH.BackColor = SystemColors.Control;
+        }
     }
 }

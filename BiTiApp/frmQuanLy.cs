@@ -248,5 +248,63 @@ namespace BiTiApp
                 MessageBox.Show("Không tìm thấy!");
             }
         }
+        //Đổi màu lia button
+        private void btnThem_MouseEnter(object sender, EventArgs e)
+        {
+            btnThem.BackColor = Color.FromArgb(153, 5, 176);
+            btnThem.ForeColor = Color.White;
+        }
+
+        private void btnThem_MouseLeave(object sender, EventArgs e)
+        {
+            btnThem.BackColor = SystemColors.Control;
+            btnThem.ForeColor= SystemColors.ControlText;
+        }
+
+        private void btnXoa_MouseEnter(object sender, EventArgs e)
+        {
+            btnXoa.BackColor = Color.FromArgb(153, 5, 176);
+            btnXoa.ForeColor = Color.White;
+        }
+
+        private void btnXoa_MouseLeave(object sender, EventArgs e)
+        {
+            btnXoa.BackColor = SystemColors.Control;
+            btnXoa.ForeColor= SystemColors.ControlText;
+        }
+
+        private void btnSua_MouseEnter(object sender, EventArgs e)
+        {
+            btnSua.BackColor = Color.FromArgb(153, 5, 176);
+            btnSua.ForeColor = Color.White;
+        }
+
+        private void btnSua_MouseLeave(object sender, EventArgs e)
+        {
+            btnSua.BackColor = SystemColors.Control;
+            btnSua.ForeColor = SystemColors.ControlText;
+        }
+
+        private void btnLamMoi_MouseEnter(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = Color.FromArgb(153, 5, 176);
+            btnLamMoi.ForeColor = Color.White;
+        }
+
+        private void btnLamMoi_MouseLeave(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = SystemColors.Control;
+            btnLamMoi.ForeColor = SystemColors.ControlText;
+        }
+
+        private void txtSreachTenNV_MouseEnter(object sender, EventArgs e)
+        {
+            txtSreachTenNV.BackColor = Color.FromArgb(163, 175, 204);
+        }
+
+        private void txtSreachTenNV_MouseLeave(object sender, EventArgs e)
+        {
+            txtSreachTenNV.BackColor = SystemColors.Control;
+        }
     }
 }

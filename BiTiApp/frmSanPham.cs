@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace BiTiApp
 {
@@ -174,6 +175,65 @@ namespace BiTiApp
             txtSreach.Text = "";
             txtMaSP.ReadOnly = false;
             dtgvSQLShow();
+        }
+        //Click đổi màu button
+        private void btnThem_MouseEnter(object sender, EventArgs e)
+        {
+            btnThem.BackColor = Color.FromArgb(9, 135, 173);
+            btnThem.ForeColor = Color.White;
+        }
+
+        private void btnThem_MouseLeave(object sender, EventArgs e)
+        {
+            btnThem.BackColor = SystemColors.Control;
+            btnThem.ForeColor = DefaultForeColor;
+        }
+
+        private void btnXoa_MouseEnter(object sender, EventArgs e)
+        {
+            btnXoa.BackColor = Color.FromArgb(9, 135, 173);
+            btnXoa.ForeColor = Color.White;
+        }
+
+        private void btnXoa_MouseLeave(object sender, EventArgs e)
+        {
+            btnXoa.BackColor = SystemColors.Control;
+            btnXoa.ForeColor = DefaultForeColor;
+        }
+
+        private void btnSua_MouseEnter(object sender, EventArgs e)
+        {
+            btnSua.BackColor = Color.FromArgb(9, 135, 173);
+            btnSua.ForeColor = Color.White;
+        }
+
+        private void btnSua_MouseLeave(object sender, EventArgs e)
+        {
+            btnSua.BackColor = SystemColors.Control;
+            btnSua.ForeColor = DefaultForeColor;
+            
+        }
+
+        private void btnLamMoi_MouseEnter(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor = Color.FromArgb(9, 135, 173);
+            btnLamMoi.ForeColor = Color.White;
+        }
+
+        private void btnLamMoi_MouseLeave(object sender, EventArgs e)
+        {
+            btnLamMoi.BackColor= SystemColors.Control;
+            btnLamMoi.ForeColor= DefaultForeColor;
+        }
+
+        private void txtSreach_MouseEnter(object sender, EventArgs e)
+        {
+            txtSreach.BackColor = Color.FromArgb(163, 175, 204);
+        }
+
+        private void txtSreach_MouseLeave(object sender, EventArgs e)
+        {
+            txtSreach.BackColor = SystemColors.Control;
         }
     }
 }
