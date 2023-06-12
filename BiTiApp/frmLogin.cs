@@ -95,6 +95,7 @@ namespace BiTiApp
             if (txt.Text == "Mật khẩu")
             {
                 txt.Text = "";
+                txtMatKhau_DangNhap.PasswordChar = '*';
             }
         }
 
@@ -104,6 +105,18 @@ namespace BiTiApp
             if (txt.Text == "Nhập lại mật khẩu")
             {
                 txt.Text = "";
+            }
+        }
+
+        private void checkBox_ShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_ShowPass.Checked == true)
+            {
+                txtMatKhau_DangNhap.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMatKhau_DangNhap.PasswordChar = '*';
             }
         }
     }

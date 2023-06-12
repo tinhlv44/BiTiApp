@@ -53,26 +53,6 @@ namespace BiTiApp
         private void frmQuanLy_Load(object sender, EventArgs e)
         {
             dtgvSQLShow();
-            //Hiện icon ShowPass
-            string currentFolderPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString()+ @"\Images\icon_showpass.png";
-            Image image = Image.FromFile(currentFolderPath);
-            float aspectRatio = (float)image.Width / (float)image.Height;
-            int newWidth = btnShowPass.Height - 10;
-            int newHeight = (int)(newWidth / aspectRatio);
-            Image resizedImage = new Bitmap(image, newWidth, newHeight);
-            btnShowPass.ImageAlign = ContentAlignment.MiddleCenter;
-            btnShowPass.Image = resizedImage;
-            image.Dispose();
-            //Hiện icon search
-            currentFolderPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString() + @"\Images\icon_search.png";
-            image = Image.FromFile(currentFolderPath);
-            aspectRatio = (float)image.Width / (float)image.Height;
-            newWidth = btnSearch.Height - 10;
-            newHeight = (int)(newWidth / aspectRatio);
-            resizedImage = new Bitmap(image, newWidth, newHeight);
-            btnSearch.ImageAlign = ContentAlignment.MiddleCenter;
-            btnSearch.Image = resizedImage;
-            image.Dispose();
         }
         private void dtgvSQLShow()
         {
@@ -209,26 +189,50 @@ namespace BiTiApp
             }
         }
 
-        private void btnShowPass_MouseDown(object sender, MouseEventArgs e)
+
+        private void ptbShowPass_MouseDown(object sender, MouseEventArgs e)
         {
-            txtMatKhau.Text = dtgvSQL.SelectedRows[0].Cells[3].Value.ToString();
+            if (dtgvSQL.SelectedRows.Count > 0)
+            {
+                ptbShowPass.Image = Properties.Resources.showpass;
+                ptbShowPass.BackColor = SystemColors.Window;
+                txtMatKhau.Text = dtgvSQL.SelectedRows[0].Cells[3].Value.ToString();
+            }
+
         }
 
-        private void btnShowPass_MouseUp(object sender, MouseEventArgs e)
+        private void ptbShowPass_MouseUp(object sender, MouseEventArgs e)
         {
-            txtMatKhau.Text = "********";
+            if (dtgvSQL.SelectedRows.Count > 0)
+            {                
+                ptbShowPass.Image = Properties.Resources.hidepass;
+                ptbShowPass.BackColor = SystemColors.Control;
+                txtMatKhau.Text = "********";
+            }
+
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void ptbSearch_MouseDown(object sender, MouseEventArgs e)
+        {
+            //ptbSearch.BackColor = Color.FromArgb(69, 69, 69);
+            ptbSearch.BackColor = SystemColors.Window;
+        }
+
+        private void ptbSearch_MouseUp(object sender, MouseEventArgs e)
+        {
+            ptbSearch.BackColor = SystemColors.Control;
+        }
+
+        private void ptbSearch_Click(object sender, EventArgs e)
         {
             SqlCommand checkEmailCmd = new SqlCommand("SELECT COUNT(Name) FROM userr WHERE Name LIKE @name", con.Open());
-            checkEmailCmd.Parameters.AddWithValue("@name", "%"+txtSreachTenNV.Text+"%");
+            checkEmailCmd.Parameters.AddWithValue("@name", "%" + txtSreachTenNV.Text + "%");
             int emailCount = (int)checkEmailCmd.ExecuteScalar();
 
             if (emailCount != 0)
             {
                 dataTable.Clear();
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT UserID, Name, [User/Email], Password, Addresss, Phone, IsManager FROM userr WHERE Name LIKE '%"+txtSreachTenNV.Text+"%'", con.Open());
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT UserID, Name, [User/Email], Password, Addresss, Phone, IsManager FROM userr WHERE Name LIKE '%" + txtSreachTenNV.Text + "%'", con.Open());
                 sqlDataAdapter.Fill(dataTable);
                 dtgvSQL.DataSource = dataTable;
                 dtgvSQL.Columns[0].HeaderText = "Mã nhân viên";
@@ -237,7 +241,7 @@ namespace BiTiApp
                 dtgvSQL.Columns[4].HeaderText = "Địa chỉ";
                 dtgvSQL.Columns[5].HeaderText = "Số điện thoại";
                 dtgvSQL.Columns[1].HeaderText = "Tên nhân viên";
-                con.Close();            
+                con.Close();
             }
             else
             {

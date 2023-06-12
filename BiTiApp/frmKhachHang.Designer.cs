@@ -50,10 +50,11 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.lblSDT = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.ptbSearch = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -281,21 +282,27 @@
             this.lblSDT.TabIndex = 32;
             this.lblSDT.Text = "Số điện thoại";
             // 
-            // btnSearch
+            // ptbSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(872, 213);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(30, 28);
-            this.btnSearch.TabIndex = 53;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.ptbSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.ptbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbSearch.Image = global::BiTiApp.Properties.Resources.icon_search;
+            this.ptbSearch.Location = new System.Drawing.Point(870, 213);
+            this.ptbSearch.Name = "ptbSearch";
+            this.ptbSearch.Size = new System.Drawing.Size(30, 28);
+            this.ptbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbSearch.TabIndex = 55;
+            this.ptbSearch.TabStop = false;
+            this.ptbSearch.Click += new System.EventHandler(this.ptbSearch_Click);
+            this.ptbSearch.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptbSearch_MouseDown);
+            this.ptbSearch.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ptbSearch_MouseUp);
             // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 591);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.ptbSearch);
             this.Controls.Add(this.lblSDT);
             this.Controls.Add(this.lblDiaChi);
             this.Controls.Add(this.lblHoTen);
@@ -317,6 +324,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,6 +354,6 @@
         private System.Windows.Forms.Label lblDiaChi;
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Button btnQuanLy;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.PictureBox ptbSearch;
     }
 }

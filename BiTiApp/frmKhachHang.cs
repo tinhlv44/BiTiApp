@@ -27,17 +27,6 @@ namespace BiTiApp
                 ShowLimitedContent();
             }
             dtgvSQLShow();
-
-            //Hiện icon search
-            string currentFolderPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location).ToString() + @"\Images\icon_search.png";
-            Image image = Image.FromFile(currentFolderPath);
-            float aspectRatio = (float)image.Width / (float)image.Height;
-            int newWidth = btnSearch.Height - 10;
-            int newHeight = (int)(newWidth / aspectRatio);
-            Image resizedImage = new Bitmap(image, newWidth, newHeight);
-            btnSearch.ImageAlign = ContentAlignment.MiddleCenter;
-            btnSearch.Image = resizedImage;
-            image.Dispose();
         }
         private void dtgvSQLShow()
         {
@@ -183,7 +172,7 @@ namespace BiTiApp
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void ptbSearch_Click(object sender, EventArgs e)
         {
             SqlCommand checkCmd = new SqlCommand("SELECT COUNT(CustomerName) FROM Customer WHERE CustomerName LIKE @CustomerName", con.Open());
             checkCmd.Parameters.AddWithValue("@CustomerName", "%" + txtSreachTenKH.Text + "%");
@@ -205,6 +194,17 @@ namespace BiTiApp
             {
                 MessageBox.Show("Không tìm thấy!");
             }
+
+        }
+
+        private void ptbSearch_MouseDown(object sender, MouseEventArgs e)
+        {
+            ptbSearch.BackColor = SystemColors.Window;
+        }
+
+        private void ptbSearch_MouseUp(object sender, MouseEventArgs e)
+        {
+            ptbSearch.BackColor = SystemColors.Control;
         }
     }
 }

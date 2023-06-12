@@ -55,11 +55,13 @@
             this.checkBox_QTri = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.btnShowPass = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.ptbSearch = new System.Windows.Forms.PictureBox();
+            this.ptbShowPass = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbShowPass)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -335,32 +337,41 @@
             this.txtMatKhau.Size = new System.Drawing.Size(190, 28);
             this.txtMatKhau.TabIndex = 49;
             // 
-            // btnShowPass
+            // ptbSearch
             // 
-            this.btnShowPass.Location = new System.Drawing.Point(961, 151);
-            this.btnShowPass.Name = "btnShowPass";
-            this.btnShowPass.Size = new System.Drawing.Size(30, 28);
-            this.btnShowPass.TabIndex = 51;
-            this.btnShowPass.UseVisualStyleBackColor = true;
-            this.btnShowPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShowPass_MouseDown);
-            this.btnShowPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShowPass_MouseUp);
+            this.ptbSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.ptbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbSearch.Image = global::BiTiApp.Properties.Resources.icon_search;
+            this.ptbSearch.Location = new System.Drawing.Point(870, 214);
+            this.ptbSearch.Name = "ptbSearch";
+            this.ptbSearch.Size = new System.Drawing.Size(30, 28);
+            this.ptbSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbSearch.TabIndex = 54;
+            this.ptbSearch.TabStop = false;
+            this.ptbSearch.Click += new System.EventHandler(this.ptbSearch_Click);
+            this.ptbSearch.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptbSearch_MouseDown);
+            this.ptbSearch.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ptbSearch_MouseUp);
             // 
-            // btnSearch
+            // ptbShowPass
             // 
-            this.btnSearch.Location = new System.Drawing.Point(870, 214);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(30, 28);
-            this.btnSearch.TabIndex = 52;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.ptbShowPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbShowPass.Image = global::BiTiApp.Properties.Resources.hidepass;
+            this.ptbShowPass.Location = new System.Drawing.Point(962, 150);
+            this.ptbShowPass.Name = "ptbShowPass";
+            this.ptbShowPass.Size = new System.Drawing.Size(30, 28);
+            this.ptbShowPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbShowPass.TabIndex = 53;
+            this.ptbShowPass.TabStop = false;
+            this.ptbShowPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptbShowPass_MouseDown);
+            this.ptbShowPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ptbShowPass_MouseUp);
             // 
             // frmQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 591);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.btnShowPass);
+            this.Controls.Add(this.ptbSearch);
+            this.Controls.Add(this.ptbShowPass);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.checkBox_QTri);
@@ -387,6 +398,8 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbShowPass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,7 +434,7 @@
         private System.Windows.Forms.CheckBox checkBox_QTri;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.Button btnShowPass;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.PictureBox ptbShowPass;
+        private System.Windows.Forms.PictureBox ptbSearch;
     }
 }

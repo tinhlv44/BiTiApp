@@ -33,7 +33,7 @@
             this.pnLogin = new System.Windows.Forms.Panel();
             this.btnRegChange = new System.Windows.Forms.Button();
             this.btnDangNhapTaiKhoan = new System.Windows.Forms.Button();
-            this.checkBox_GhiNho = new System.Windows.Forms.CheckBox();
+            this.checkBox_ShowPass = new System.Windows.Forms.CheckBox();
             this.txtMatKhau_DangNhap = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,7 +78,7 @@
             this.pnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
             this.pnLogin.Controls.Add(this.btnRegChange);
             this.pnLogin.Controls.Add(this.btnDangNhapTaiKhoan);
-            this.pnLogin.Controls.Add(this.checkBox_GhiNho);
+            this.pnLogin.Controls.Add(this.checkBox_ShowPass);
             this.pnLogin.Controls.Add(this.txtMatKhau_DangNhap);
             this.pnLogin.Controls.Add(this.pictureBox3);
             this.pnLogin.Controls.Add(this.label1);
@@ -120,17 +120,18 @@
             this.btnDangNhapTaiKhoan.UseVisualStyleBackColor = false;
             this.btnDangNhapTaiKhoan.Click += new System.EventHandler(this.btnDangNhapTaiKhoan_Click);
             // 
-            // checkBox_GhiNho
+            // checkBox_ShowPass
             // 
-            this.checkBox_GhiNho.AutoSize = true;
-            this.checkBox_GhiNho.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_GhiNho.ForeColor = System.Drawing.Color.White;
-            this.checkBox_GhiNho.Location = new System.Drawing.Point(27, 206);
-            this.checkBox_GhiNho.Name = "checkBox_GhiNho";
-            this.checkBox_GhiNho.Size = new System.Drawing.Size(74, 24);
-            this.checkBox_GhiNho.TabIndex = 10;
-            this.checkBox_GhiNho.Text = "Ghi nhớ";
-            this.checkBox_GhiNho.UseVisualStyleBackColor = true;
+            this.checkBox_ShowPass.AutoSize = true;
+            this.checkBox_ShowPass.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_ShowPass.ForeColor = System.Drawing.Color.White;
+            this.checkBox_ShowPass.Location = new System.Drawing.Point(27, 206);
+            this.checkBox_ShowPass.Name = "checkBox_ShowPass";
+            this.checkBox_ShowPass.Size = new System.Drawing.Size(111, 24);
+            this.checkBox_ShowPass.TabIndex = 10;
+            this.checkBox_ShowPass.Text = "Hiện mật khẩu";
+            this.checkBox_ShowPass.UseVisualStyleBackColor = true;
+            this.checkBox_ShowPass.CheckedChanged += new System.EventHandler(this.checkBox_ShowPass_CheckedChanged);
             // 
             // txtMatKhau_DangNhap
             // 
@@ -474,7 +475,7 @@
         private System.Windows.Forms.TextBox txtMatKhau_DangNhap;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox_GhiNho;
+        private System.Windows.Forms.CheckBox checkBox_ShowPass;
         private System.Windows.Forms.Button btnDangNhapTaiKhoan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button txtDangkyTaiKhoan;

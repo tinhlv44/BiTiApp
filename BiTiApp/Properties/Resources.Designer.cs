@@ -83,6 +83,26 @@ namespace BiTiApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hidepass {
+            get {
+                object obj = ResourceManager.GetObject("hidepass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_search {
+            get {
+                object obj = ResourceManager.GetObject("icon_search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_showpass {
             get {
                 object obj = ResourceManager.GetObject("icon_showpass", resourceCulture);
@@ -106,6 +126,16 @@ namespace BiTiApp.Properties {
         internal static System.Drawing.Bitmap passWhite {
             get {
                 object obj = ResourceManager.GetObject("passWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap showpass {
+            get {
+                object obj = ResourceManager.GetObject("showpass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -161,5 +161,14 @@
   <ItemGroup>
     <None Include="bin\Debug\Images\icon_showpass.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidepass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showpass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\icon_search.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
