@@ -106,7 +106,7 @@
             // 
             // txtMaNVvaTenNV
             // 
-            this.txtMaNVvaTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtMaNVvaTenNV.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaNVvaTenNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaNVvaTenNV.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaNVvaTenNV.Location = new System.Drawing.Point(91, 74);
@@ -194,7 +194,7 @@
             // 
             // txtMaKHvaTenKH
             // 
-            this.txtMaKHvaTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtMaKHvaTenKH.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaKHvaTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaKHvaTenKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaKHvaTenKH.Location = new System.Drawing.Point(91, 137);
@@ -205,7 +205,7 @@
             // 
             // txtThoiGian
             // 
-            this.txtThoiGian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtThoiGian.BackColor = System.Drawing.SystemColors.Control;
             this.txtThoiGian.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThoiGian.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtThoiGian.Location = new System.Drawing.Point(91, 196);
@@ -216,7 +216,7 @@
             // 
             // txtThanhTien
             // 
-            this.txtThanhTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtThanhTien.BackColor = System.Drawing.SystemColors.Control;
             this.txtThanhTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtThanhTien.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtThanhTien.Location = new System.Drawing.Point(361, 196);
@@ -227,7 +227,7 @@
             // 
             // txtDonGia
             // 
-            this.txtDonGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtDonGia.BackColor = System.Drawing.SystemColors.Control;
             this.txtDonGia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDonGia.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDonGia.Location = new System.Drawing.Point(361, 137);
@@ -238,7 +238,7 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSoLuong.BackColor = System.Drawing.SystemColors.Control;
             this.txtSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoLuong.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSoLuong.Location = new System.Drawing.Point(495, 137);
@@ -249,7 +249,7 @@
             // 
             // txtTenSPvaTonKho
             // 
-            this.txtTenSPvaTonKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtTenSPvaTonKho.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenSPvaTonKho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenSPvaTonKho.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtTenSPvaTonKho.Location = new System.Drawing.Point(361, 74);
@@ -275,9 +275,9 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(5)))), ((int)(((byte)(176)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 268);
+            this.dataGridView1.Location = new System.Drawing.Point(-8, 268);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1077, 324);
+            this.dataGridView1.Size = new System.Drawing.Size(1110, 324);
             this.dataGridView1.TabIndex = 33;
             // 
             // frmChiTietHoaDon

@@ -47,7 +47,7 @@
             // dtgvSQL
             // 
             this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(5)))), ((int)(((byte)(176)))));
+            this.dtgvSQL.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSQL.Location = new System.Drawing.Point(208, 105);
             this.dtgvSQL.Name = "dtgvSQL";
@@ -57,7 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
-            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.pn;
+            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.backg_black;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
@@ -130,7 +130,9 @@
             // 
             // btnHoadon
             // 
-            this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
+            this.btnHoadon.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHoadon.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
+            this.btnHoadon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHoadon.FlatAppearance.BorderSize = 0;
             this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoadon.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,7 +193,7 @@
             // 
             // txtSreach_TheoTenKH
             // 
-            this.txtSreach_TheoTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSreach_TheoTenKH.BackColor = System.Drawing.SystemColors.Control;
             this.txtSreach_TheoTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreach_TheoTenKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSreach_TheoTenKH.Location = new System.Drawing.Point(429, 38);

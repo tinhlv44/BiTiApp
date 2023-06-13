@@ -63,7 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
-            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.pn;
+            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.backg_black;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
@@ -121,7 +121,9 @@
             // 
             // btnTaikhoang
             // 
-            this.btnTaikhoang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
+            this.btnTaikhoang.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTaikhoang.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
+            this.btnTaikhoang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTaikhoang.FlatAppearance.BorderSize = 0;
             this.btnTaikhoang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaikhoang.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -280,7 +282,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtHoTen.BackColor = System.Drawing.SystemColors.Control;
             this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtHoTen.ForeColor = System.Drawing.Color.Black;
@@ -292,7 +294,7 @@
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtDiaChi.BackColor = System.Drawing.SystemColors.Control;
             this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(391, 225);
@@ -303,7 +305,7 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSDT.BackColor = System.Drawing.SystemColors.Control;
             this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSDT.Location = new System.Drawing.Point(391, 284);
@@ -314,7 +316,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtEmail.Location = new System.Drawing.Point(391, 341);
@@ -325,7 +327,7 @@
             // 
             // txtNhapLaiMatKhau
             // 
-            this.txtNhapLaiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtNhapLaiMatKhau.BackColor = System.Drawing.SystemColors.Control;
             this.txtNhapLaiMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNhapLaiMatKhau.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtNhapLaiMatKhau.Location = new System.Drawing.Point(824, 284);
@@ -336,7 +338,7 @@
             // 
             // txtMatKhauMoi
             // 
-            this.txtMatKhauMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtMatKhauMoi.BackColor = System.Drawing.SystemColors.Control;
             this.txtMatKhauMoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhauMoi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMatKhauMoi.Location = new System.Drawing.Point(824, 225);
@@ -347,7 +349,7 @@
             // 
             // txtMatKhauCu
             // 
-            this.txtMatKhauCu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtMatKhauCu.BackColor = System.Drawing.SystemColors.Control;
             this.txtMatKhauCu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMatKhauCu.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMatKhauCu.Location = new System.Drawing.Point(824, 161);

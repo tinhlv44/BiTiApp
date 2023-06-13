@@ -40,14 +40,27 @@ namespace BiTiApp
         {
             pnLogin.Visible = false;
             pnRegister.Visible = true;
+            reset();
         }
 
         private void BtnLoginChange_Click(object sender, EventArgs e)
         {
             pnLogin.Visible = true;
             pnRegister.Visible = false;
+            reset();
         }
+        private void reset()
+        {
+            txtEmail_Dangky.Text = "Email";
+            txtEmail_DangNhap.Text = "Email";
+            txtMatKhau_Dangky.Text = "Mật khẩu";
+            txtNhapLai_MatKhau_Dky.Text = "Nhập lại mật khẩu";
+            txtMatKhau_DangNhap.Text = "Mật khẩu";
+            txtMatKhau_Dangky.PasswordChar = '\0';
+            txtMatKhau_DangNhap.PasswordChar = '\0';
+            txtNhapLai_MatKhau_Dky.PasswordChar = '\0';
 
+        }
         private void LblClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -96,7 +109,7 @@ namespace BiTiApp
             {
                 txt.Text = "";
             }
-            txtMatKhau_DangNhap.PasswordChar = '*';
+            txt.PasswordChar = '*';
         }
 
         private void txtNhapLai_MatKhau_Dky_Click(object sender, EventArgs e)
@@ -106,6 +119,7 @@ namespace BiTiApp
             {
                 txt.Text = "";
             }
+            txt.PasswordChar = '*';
         }
 
         private void checkBox_ShowPass_CheckedChanged(object sender, EventArgs e)
@@ -117,6 +131,22 @@ namespace BiTiApp
             else
             {
                 txtMatKhau_DangNhap.PasswordChar = '*';
+            }
+            if (cbxshowpass2.Checked == true)
+            {
+                txtMatKhau_Dangky.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMatKhau_Dangky.PasswordChar = '*';
+            }
+            if (cbxshowpass2.Checked == true)
+            {
+                txtNhapLai_MatKhau_Dky.PasswordChar = '\0';
+            }
+            else
+            {
+                txtNhapLai_MatKhau_Dky.PasswordChar = '*';
             }
         }
 

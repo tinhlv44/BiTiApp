@@ -63,6 +63,16 @@ namespace BiTiApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backg_black {
+            get {
+                object obj = ResourceManager.GetObject("backg_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_cong_nghe_dien_thoai_011206635 {
             get {
                 object obj = ResourceManager.GetObject("background-cong-nghe-dien-thoai_011206635", resourceCulture);
@@ -116,6 +126,36 @@ namespace BiTiApp.Properties {
         internal static System.Drawing.Bitmap iconTK {
             get {
                 object obj = ResourceManager.GetObject("iconTK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iphone13_xanh_thuong {
+            get {
+                object obj = ResourceManager.GetObject("Iphone13_xanh_thuong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iphone14_vang_prom {
+            get {
+                object obj = ResourceManager.GetObject("Iphone14_vang_prom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iphone14_vang_thuong {
+            get {
+                object obj = ResourceManager.GetObject("Iphone14_vang_thuong", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

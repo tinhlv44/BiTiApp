@@ -62,6 +62,7 @@
             this.txtNhapLai_MatKhau_Dky = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.cbxshowpass2 = new System.Windows.Forms.CheckBox();
             this.pnLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -126,11 +127,11 @@
             // checkBox_ShowPass
             // 
             this.checkBox_ShowPass.AutoSize = true;
-            this.checkBox_ShowPass.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_ShowPass.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_ShowPass.ForeColor = System.Drawing.Color.White;
-            this.checkBox_ShowPass.Location = new System.Drawing.Point(72, 206);
+            this.checkBox_ShowPass.Location = new System.Drawing.Point(90, 214);
             this.checkBox_ShowPass.Name = "checkBox_ShowPass";
-            this.checkBox_ShowPass.Size = new System.Drawing.Size(93, 18);
+            this.checkBox_ShowPass.Size = new System.Drawing.Size(120, 21);
             this.checkBox_ShowPass.TabIndex = 10;
             this.checkBox_ShowPass.Text = "Hiện mật khẩu";
             this.checkBox_ShowPass.UseVisualStyleBackColor = true;
@@ -262,7 +263,7 @@
             this.txtDangkyTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtDangkyTaiKhoan.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDangkyTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.txtDangkyTaiKhoan.Location = new System.Drawing.Point(73, 283);
+            this.txtDangkyTaiKhoan.Location = new System.Drawing.Point(73, 289);
             this.txtDangkyTaiKhoan.Name = "txtDangkyTaiKhoan";
             this.txtDangkyTaiKhoan.Size = new System.Drawing.Size(212, 42);
             this.txtDangkyTaiKhoan.TabIndex = 11;
@@ -372,6 +373,7 @@
             // pnRegister
             // 
             this.pnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
+            this.pnRegister.Controls.Add(this.cbxshowpass2);
             this.pnRegister.Controls.Add(this.btnLoginChange);
             this.pnRegister.Controls.Add(this.txtNhapLai_MatKhau_Dky);
             this.pnRegister.Controls.Add(this.pictureBox7);
@@ -400,7 +402,7 @@
             this.btnLoginChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoginChange.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoginChange.ForeColor = System.Drawing.Color.White;
-            this.btnLoginChange.Location = new System.Drawing.Point(200, 331);
+            this.btnLoginChange.Location = new System.Drawing.Point(200, 337);
             this.btnLoginChange.Name = "btnLoginChange";
             this.btnLoginChange.Size = new System.Drawing.Size(85, 36);
             this.btnLoginChange.TabIndex = 13;
@@ -437,6 +439,19 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(180, 1);
             this.label11.TabIndex = 12;
+            // 
+            // cbxshowpass2
+            // 
+            this.cbxshowpass2.AutoSize = true;
+            this.cbxshowpass2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxshowpass2.ForeColor = System.Drawing.Color.White;
+            this.cbxshowpass2.Location = new System.Drawing.Point(91, 259);
+            this.cbxshowpass2.Name = "cbxshowpass2";
+            this.cbxshowpass2.Size = new System.Drawing.Size(120, 21);
+            this.cbxshowpass2.TabIndex = 13;
+            this.cbxshowpass2.Text = "Hiện mật khẩu";
+            this.cbxshowpass2.UseVisualStyleBackColor = true;
+            this.cbxshowpass2.CheckedChanged += new System.EventHandler(this.checkBox_ShowPass_CheckedChanged);
             // 
             // frmLogin
             // 
@@ -502,6 +517,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnRegChange;
         private System.Windows.Forms.Button btnLoginChange;
+        private System.Windows.Forms.CheckBox cbxshowpass2;
     }
 }
 

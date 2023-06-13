@@ -5,10 +5,12 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
@@ -41,6 +43,8 @@ namespace BiTiApp
             dtgvSQL.Columns[2].HeaderText = "Số lượng";
             dtgvSQL.Columns[3].HeaderText = "Giá bán";
             dtgvSQL.Columns[4].HeaderText = "Ghi chú";
+            dtgvSQL.Columns[5].HeaderText = "Đơn giá nhập";
+            dtgvSQL.Columns[6].Visible = false;
             con.Close();
         }
         private void ShowLimitedContent()
@@ -82,7 +86,27 @@ namespace BiTiApp
                 txtSoLuong.Text = selectedRow.Cells[2].Value.ToString();
                 txtDonGiaBan.Text = selectedRow.Cells[3].Value.ToString();
                 txtGhiChu.Text = selectedRow.Cells[4].Value.ToString();
+                txtDonGiaNhap.Text = selectedRow.Cells[5].Value.ToString();
+                string imageName = selectedRow.Cells[6].Value.ToString().Trim(); 
+
+                if (!string.IsNullOrEmpty(imageName)) // Kiểm tra xem người dùng đã nhập tên tệp ảnh hay chưa.
+                {
+                    try
+                    {
+                        // Đọc tệp ảnh từ tài nguyên Properties.Resources.
+                        Bitmap image = (Bitmap)Properties.Resources.ResourceManager.GetObject(imageName);
+
+                        // Hiển thị tệp ảnh lên PictureBox.
+                        pictureAnh.Image = image;
+                    }
+                    catch (Exception ex)
+                    {
+                        // Nếu không tìm thấy tệp ảnh, hiển thị một thông báo lỗi.
+                        MessageBox.Show("Không tìm thấy tệp ảnh. Xin vui lòng kiểm tra lại tên ảnh và thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
                 txtMaSP.ReadOnly = true;
+                txtMaSP.BackColor = SystemColors.ActiveBorder;
             }
         }
 
@@ -174,7 +198,10 @@ namespace BiTiApp
             txtDonGiaBan.Text = "";
             txtGhiChu.Text = "";
             txtSreach.Text = "";
+            txtDonGiaNhap.Text = "";
             txtMaSP.ReadOnly = false;
+            txtMaSP.BackColor = SystemColors.Control;
+            pictureAnh.Image = null;
             dtgvSQLShow();
         }
         //Click đổi màu button
@@ -227,14 +254,46 @@ namespace BiTiApp
             btnLamMoi.ForeColor= DefaultForeColor;
         }
 
-        private void txtSreach_MouseEnter(object sender, EventArgs e)
+        private void btnChonAnh_Click(object sender, EventArgs e)
         {
-           txtSreach.BackColor = Color.FromArgb(163, 175, 204);
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "Image Files (*.jpg; *.jpeg; *.png)|*.jpg; *.jpeg; *.png";
+
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Lấy đường dẫn của tập tin ảnh đã chọn.
+                string filePath = fileDialog.FileName;
+
+                // Hiển thị ảnh đã chọn lên PictureBox.
+                pictureAnh.Image = new Bitmap(filePath);
+            }
         }
 
-        private void txtSreach_MouseLeave(object sender, EventArgs e)
+        private void ptbSearch_Click(object sender, EventArgs e)
         {
-            txtSreach.BackColor = Color.FromArgb(5, 209, 245);
+            SqlCommand checkCmd = new SqlCommand("SELECT COUNT(ProductName) FROM Product WHERE ProductName LIKE @ProductName", con.Open());
+            checkCmd.Parameters.AddWithValue("@ProductName", "%" + txtSreach.Text + "%");
+            int Count = (int)checkCmd.ExecuteScalar();
+
+            if (Count != 0)
+            {
+                dataTable.Clear();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(@"SELECT * FROM Product WHERE ProductName LIKE '%" + txtSreach.Text + "%'", con.Open());
+                sqlDataAdapter.Fill(dataTable);
+                dtgvSQL.DataSource = dataTable;
+                dtgvSQL.Columns[0].HeaderText = "Mã sản phẩm";
+                dtgvSQL.Columns[1].HeaderText = "Tên sản phẩm";
+                dtgvSQL.Columns[2].HeaderText = "Số lượng";
+                dtgvSQL.Columns[3].HeaderText = "Giá bán";
+                dtgvSQL.Columns[4].HeaderText = "Ghi chú";
+                dtgvSQL.Columns[5].HeaderText = "Đơn giá nhập";
+                dtgvSQL.Columns[6].Visible = false;
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy!");
+            }
         }
     }
 }

@@ -60,8 +60,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
-            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.pn;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.backg_black;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
@@ -149,10 +149,11 @@
             // 
             // btnKhachhang
             // 
-            this.btnKhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
+            this.btnKhachhang.BackColor = System.Drawing.SystemColors.Control;
+            this.btnKhachhang.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
             this.btnKhachhang.FlatAppearance.BorderSize = 0;
             this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachhang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachhang.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.Location = new System.Drawing.Point(0, 260);
             this.btnKhachhang.Name = "btnKhachhang";
@@ -194,7 +195,7 @@
             // 
             // txtSreachTenKH
             // 
-            this.txtSreachTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSreachTenKH.BackColor = System.Drawing.SystemColors.Control;
             this.txtSreachTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreachTenKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSreachTenKH.Location = new System.Drawing.Point(906, 213);
@@ -256,7 +257,7 @@
             // dtgvSQL
             // 
             this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(5)))), ((int)(((byte)(176)))));
+            this.dtgvSQL.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSQL.Location = new System.Drawing.Point(206, 260);
             this.dtgvSQL.Name = "dtgvSQL";
@@ -266,7 +267,7 @@
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtDiaChi.BackColor = System.Drawing.SystemColors.Control;
             this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(712, 47);
@@ -277,7 +278,7 @@
             // 
             // txtMaKH
             // 
-            this.txtMaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtMaKH.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaKH.Location = new System.Drawing.Point(373, 47);
@@ -288,7 +289,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtHoTen.BackColor = System.Drawing.SystemColors.Control;
             this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(373, 108);
@@ -299,7 +300,7 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.txtSDT.BackColor = System.Drawing.SystemColors.Control;
             this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);

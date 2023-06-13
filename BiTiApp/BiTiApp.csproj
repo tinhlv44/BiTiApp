@@ -188,5 +188,17 @@
   <ItemGroup>
     <None Include="Resources\pn.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backg_black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone13_xanh_thuong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone14_vang_prom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone14_vang_thuong.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
