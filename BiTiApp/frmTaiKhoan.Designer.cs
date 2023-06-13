@@ -370,6 +370,7 @@
             this.btnDoiMatKhau.TabIndex = 25;
             this.btnDoiMatKhau.Text = "Đổi mật khẩu";
             this.btnDoiMatKhau.UseVisualStyleBackColor = true;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
             this.btnDoiMatKhau.MouseEnter += new System.EventHandler(this.btnDoiMatKhau_MouseEnter);
             this.btnDoiMatKhau.MouseLeave += new System.EventHandler(this.btnDoiMatKhau_MouseLeave);
             // 

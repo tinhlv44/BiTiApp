@@ -86,6 +86,7 @@ namespace BiTiApp
                     {
                         clsIsManager.setIsManager(false);
                     }
+                    clsIsManager.saveAcc(row);
                     clsFormSwitcher.SwitchForm("frmSanPham", this);
                     return;
                 }

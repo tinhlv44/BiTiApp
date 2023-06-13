@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,25 @@ namespace BiTiApp
             {
                 ShowLimitedContent();
             }
+            DataRow acc = clsIsManager.getAcc();
+            txtEmail.Text = (string)acc["User/Email"];
+            txtHoTen.Text = (string)acc["Name"];
+            try
+            {
+                txtDiaChi.Text = (string)acc["Addresss"];
+
+            }
+            catch (Exception ex)
+            {
+                txtDiaChi.Text = "";
+            }
+            txtSDT.Text = (string)acc["Phone"];
+            txtEmail.ReadOnly = true;
+            txtHoTen.ReadOnly = true;
+            txtDiaChi.ReadOnly = true;
+            txtSDT.ReadOnly = true;
+            btnSua.Visible = false;
+            btnLamMoi.Visible = false;
         }
         private void ShowLimitedContent()
         {
@@ -83,6 +103,27 @@ namespace BiTiApp
         private void btnDoiMatKhau_MouseLeave(object sender, EventArgs e)
         {
             btnDoiMatKhau.ForeColor = Color.Black;
+        }
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            DataRow acc = clsIsManager.getAcc();
+            if (txtMatKhauCu.Text != (string)acc["Password"])
+            {
+                MessageBox.Show("Mật khẩu sai!");
+            }
+            else if (txtMatKhauMoi.Text != txtNhapLaiMatKhau.Text)
+            {
+                MessageBox.Show("Nhập lại mật khẩu không trùng với mật khẩu mới!");
+            }
+            else
+            {
+                clsDatabaseConnection con = new clsDatabaseConnection();
+                SqlCommand command = new SqlCommand("UPDATE Userr SET Password = '" + txtMatKhauMoi.Text + "' WHERE UserID = " + acc["UserID"]+"", con.Open());
+                command.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Cập nhật mật khẩu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
