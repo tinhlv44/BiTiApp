@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -185,7 +186,7 @@ namespace BiTiApp
 
         private void btnThem_MouseLeave(object sender, EventArgs e)
         {
-            btnThem.BackColor = SystemColors.Control;
+            btnThem.BackColor = Color.FromArgb(148, 174, 202);
             btnThem.ForeColor = DefaultForeColor;
         }
 
@@ -197,19 +198,19 @@ namespace BiTiApp
 
         private void btnXoa_MouseLeave(object sender, EventArgs e)
         {
-            btnXoa.BackColor = SystemColors.Control;
+            btnXoa.BackColor = Color.FromArgb(148, 174, 202);
             btnXoa.ForeColor = DefaultForeColor;
         }
 
         private void btnSua_MouseEnter(object sender, EventArgs e)
         {
-            btnSua.BackColor = Color.FromArgb(9, 135, 173);
-            btnSua.ForeColor = Color.White;
+          btnSua.BackColor = Color.FromArgb(9, 135, 173);
+          btnSua.ForeColor = Color.White;
         }
 
         private void btnSua_MouseLeave(object sender, EventArgs e)
         {
-            btnSua.BackColor = SystemColors.Control;
+            btnSua.BackColor = Color.FromArgb(148, 174, 202);
             btnSua.ForeColor = DefaultForeColor;
             
         }
@@ -222,18 +223,18 @@ namespace BiTiApp
 
         private void btnLamMoi_MouseLeave(object sender, EventArgs e)
         {
-            btnLamMoi.BackColor= SystemColors.Control;
+            btnLamMoi.BackColor= Color.FromArgb(148, 174, 202);
             btnLamMoi.ForeColor= DefaultForeColor;
         }
 
         private void txtSreach_MouseEnter(object sender, EventArgs e)
         {
-            txtSreach.BackColor = Color.FromArgb(163, 175, 204);
+           txtSreach.BackColor = Color.FromArgb(163, 175, 204);
         }
 
         private void txtSreach_MouseLeave(object sender, EventArgs e)
         {
-            txtSreach.BackColor = SystemColors.Control;
+            txtSreach.BackColor = Color.FromArgb(5, 209, 245);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace BiTiApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());
-            //Application.Run(new frmChiTietHoaDon());
+           // Application.Run(new frmChiTietHoaDon());
         }
     }
 }

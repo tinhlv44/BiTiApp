@@ -77,14 +77,12 @@ namespace BiTiApp
         //đổi màu button
         private void btnTaoHoaDon_MouseEnter(object sender, EventArgs e)
         {
-            btnTaoHoaDon.BackColor = Color.FromArgb(166, 101, 126);
             btnTaoHoaDon.ForeColor = Color.White;
         }
 
         private void btnTaoHoaDon_MouseLeave(object sender, EventArgs e)
         {
-            btnTaoHoaDon.BackColor = SystemColors.Control;
-            btnTaoHoaDon.ForeColor = SystemColors.ControlText;
+            btnTaoHoaDon.ForeColor = Color.Black;
         }
 
         private void txtSreach_TheoTenKH_MouseEnter(object sender, EventArgs e)
@@ -94,7 +92,7 @@ namespace BiTiApp
 
         private void txtSreach_TheoTenKH_MouseLeave(object sender, EventArgs e)
         {
-            txtSreach_TheoTenKH.BackColor = SystemColors.Control;
+            txtSreach_TheoTenKH.BackColor = Color.FromArgb(220, 116, 227);
         }
     }
 }

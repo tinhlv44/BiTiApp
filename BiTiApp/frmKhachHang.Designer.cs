@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKhachHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnQuanLy = new System.Windows.Forms.Button();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
@@ -59,7 +60,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(166)))), ((int)(((byte)(53)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
+            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.pn;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
@@ -75,18 +78,22 @@
             // 
             // btnQuanLy
             // 
+            this.btnQuanLy.BackColor = System.Drawing.Color.Transparent;
             this.btnQuanLy.FlatAppearance.BorderSize = 0;
+            this.btnQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.ForeColor = System.Drawing.Color.White;
             this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
             this.btnQuanLy.Name = "btnQuanLy";
             this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
             this.btnQuanLy.TabIndex = 19;
             this.btnQuanLy.Text = "Quản lý";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.UseVisualStyleBackColor = false;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
             // pictureLogo
             // 
+            this.pictureLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureLogo.Image = global::BiTiApp.Properties.Resources.logoBiTi;
             this.pictureLogo.Location = new System.Drawing.Point(3, 21);
             this.pictureLogo.Name = "pictureLogo";
@@ -97,47 +104,56 @@
             // 
             // btnDangxuat
             // 
+            this.btnDangxuat.BackColor = System.Drawing.Color.Transparent;
             this.btnDangxuat.FlatAppearance.BorderSize = 0;
-            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDangxuat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Location = new System.Drawing.Point(0, 542);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(200, 37);
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.UseVisualStyleBackColor = false;
             this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
+            this.btnTaikhoang.BackColor = System.Drawing.Color.Transparent;
             this.btnTaikhoang.FlatAppearance.BorderSize = 0;
+            this.btnTaikhoang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTaikhoang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaikhoang.ForeColor = System.Drawing.Color.White;
             this.btnTaikhoang.Location = new System.Drawing.Point(0, 350);
             this.btnTaikhoang.Name = "btnTaikhoang";
             this.btnTaikhoang.Size = new System.Drawing.Size(200, 38);
             this.btnTaikhoang.TabIndex = 3;
             this.btnTaikhoang.Text = "Tài khoản";
-            this.btnTaikhoang.UseVisualStyleBackColor = true;
+            this.btnTaikhoang.UseVisualStyleBackColor = false;
             this.btnTaikhoang.Click += new System.EventHandler(this.btnTaikhoang_Click);
             // 
             // btnHoadon
             // 
+            this.btnHoadon.BackColor = System.Drawing.Color.Transparent;
             this.btnHoadon.FlatAppearance.BorderSize = 0;
+            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHoadon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoadon.ForeColor = System.Drawing.Color.White;
             this.btnHoadon.Location = new System.Drawing.Point(0, 313);
             this.btnHoadon.Name = "btnHoadon";
             this.btnHoadon.Size = new System.Drawing.Size(200, 38);
             this.btnHoadon.TabIndex = 2;
             this.btnHoadon.Text = "Hóa đơn";
-            this.btnHoadon.UseVisualStyleBackColor = true;
+            this.btnHoadon.UseVisualStyleBackColor = false;
             this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // btnKhachhang
             // 
-            this.btnKhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.btnKhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
             this.btnKhachhang.FlatAppearance.BorderSize = 0;
             this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhachhang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.Location = new System.Drawing.Point(0, 260);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.Size = new System.Drawing.Size(200, 54);
@@ -147,9 +163,11 @@
             // 
             // btnSanpham
             // 
-            this.btnSanpham.BackColor = System.Drawing.Color.White;
+            this.btnSanpham.BackColor = System.Drawing.Color.Transparent;
             this.btnSanpham.FlatAppearance.BorderSize = 0;
+            this.btnSanpham.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSanpham.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanpham.ForeColor = System.Drawing.Color.White;
             this.btnSanpham.Location = new System.Drawing.Point(0, 223);
             this.btnSanpham.Name = "btnSanpham";
             this.btnSanpham.Size = new System.Drawing.Size(200, 38);
@@ -160,7 +178,10 @@
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.BackgroundImage")));
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.Location = new System.Drawing.Point(718, 198);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 46);
@@ -173,7 +194,7 @@
             // 
             // txtSreachTenKH
             // 
-            this.txtSreachTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtSreachTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.txtSreachTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreachTenKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtSreachTenKH.Location = new System.Drawing.Point(906, 213);
@@ -186,7 +207,10 @@
             // 
             // btnSua
             // 
+            this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.Location = new System.Drawing.Point(555, 198);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(137, 46);
@@ -199,7 +223,10 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.Location = new System.Drawing.Point(392, 198);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 46);
@@ -212,7 +239,10 @@
             // 
             // btnThem
             // 
+            this.btnThem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThem.BackgroundImage")));
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.Location = new System.Drawing.Point(229, 198);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 46);
@@ -226,7 +256,7 @@
             // dtgvSQL
             // 
             this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(172)))), ((int)(((byte)(7)))));
+            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(5)))), ((int)(((byte)(176)))));
             this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSQL.Location = new System.Drawing.Point(206, 260);
             this.dtgvSQL.Name = "dtgvSQL";
@@ -236,7 +266,7 @@
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtDiaChi.Location = new System.Drawing.Point(712, 47);
@@ -247,7 +277,7 @@
             // 
             // txtMaKH
             // 
-            this.txtMaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtMaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.txtMaKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaKH.Font = new System.Drawing.Font("Arial", 11.25F);
             this.txtMaKH.Location = new System.Drawing.Point(373, 47);
@@ -258,7 +288,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(373, 108);
@@ -269,7 +299,7 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.txtSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSDT.Font = new System.Drawing.Font("Arial", 11.25F);
@@ -282,6 +312,7 @@
             // lblMaKH
             // 
             this.lblMaKH.AutoSize = true;
+            this.lblMaKH.BackColor = System.Drawing.Color.Transparent;
             this.lblMaKH.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaKH.Location = new System.Drawing.Point(316, 53);
             this.lblMaKH.Name = "lblMaKH";
@@ -292,6 +323,7 @@
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
+            this.lblHoTen.BackColor = System.Drawing.Color.Transparent;
             this.lblHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoTen.Location = new System.Drawing.Point(316, 114);
             this.lblHoTen.Name = "lblHoTen";
@@ -302,6 +334,7 @@
             // lblDiaChi
             // 
             this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.BackColor = System.Drawing.Color.Transparent;
             this.lblDiaChi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiaChi.Location = new System.Drawing.Point(614, 53);
             this.lblDiaChi.Name = "lblDiaChi";
@@ -312,6 +345,7 @@
             // lblSDT
             // 
             this.lblSDT.AutoSize = true;
+            this.lblSDT.BackColor = System.Drawing.Color.Transparent;
             this.lblSDT.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.Location = new System.Drawing.Point(614, 114);
             this.lblSDT.Name = "lblSDT";
@@ -337,7 +371,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(240)))), ((int)(((byte)(134)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.ptbSearch);
             this.Controls.Add(this.lblSDT);

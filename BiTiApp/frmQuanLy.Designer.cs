@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnQuanLy = new System.Windows.Forms.Button();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
@@ -66,7 +67,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(21)))), ((int)(((byte)(212)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
+            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.pn;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
@@ -82,10 +85,11 @@
             // 
             // btnQuanLy
             // 
-            this.btnQuanLy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.btnQuanLy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
             this.btnQuanLy.FlatAppearance.BorderSize = 0;
             this.btnQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.ForeColor = System.Drawing.Color.White;
             this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
             this.btnQuanLy.Name = "btnQuanLy";
             this.btnQuanLy.Size = new System.Drawing.Size(200, 54);
@@ -95,6 +99,7 @@
             // 
             // pictureLogo
             // 
+            this.pictureLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureLogo.Image = global::BiTiApp.Properties.Resources.logoBiTi;
             this.pictureLogo.Location = new System.Drawing.Point(3, 21);
             this.pictureLogo.Name = "pictureLogo";
@@ -105,63 +110,77 @@
             // 
             // btnDangxuat
             // 
+            this.btnDangxuat.BackColor = System.Drawing.Color.Transparent;
             this.btnDangxuat.FlatAppearance.BorderSize = 0;
-            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDangxuat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Location = new System.Drawing.Point(0, 542);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(200, 37);
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.UseVisualStyleBackColor = false;
             this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
+            this.btnTaikhoang.BackColor = System.Drawing.Color.Transparent;
             this.btnTaikhoang.FlatAppearance.BorderSize = 0;
+            this.btnTaikhoang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTaikhoang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaikhoang.ForeColor = System.Drawing.Color.White;
             this.btnTaikhoang.Location = new System.Drawing.Point(0, 350);
             this.btnTaikhoang.Name = "btnTaikhoang";
             this.btnTaikhoang.Size = new System.Drawing.Size(200, 38);
             this.btnTaikhoang.TabIndex = 3;
             this.btnTaikhoang.Text = "Tài khoản";
-            this.btnTaikhoang.UseVisualStyleBackColor = true;
+            this.btnTaikhoang.UseVisualStyleBackColor = false;
             this.btnTaikhoang.Click += new System.EventHandler(this.btnTaikhoang_Click);
             // 
             // btnHoadon
             // 
+            this.btnHoadon.BackColor = System.Drawing.Color.Transparent;
             this.btnHoadon.FlatAppearance.BorderSize = 0;
+            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHoadon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoadon.ForeColor = System.Drawing.Color.White;
             this.btnHoadon.Location = new System.Drawing.Point(0, 313);
             this.btnHoadon.Name = "btnHoadon";
             this.btnHoadon.Size = new System.Drawing.Size(200, 38);
             this.btnHoadon.TabIndex = 2;
             this.btnHoadon.Text = "Hóa đơn";
-            this.btnHoadon.UseVisualStyleBackColor = true;
+            this.btnHoadon.UseVisualStyleBackColor = false;
             this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
             // 
             // btnKhachhang
             // 
+            this.btnKhachhang.BackColor = System.Drawing.Color.Transparent;
             this.btnKhachhang.FlatAppearance.BorderSize = 0;
+            this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnKhachhang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.Location = new System.Drawing.Point(0, 276);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.Size = new System.Drawing.Size(200, 38);
             this.btnKhachhang.TabIndex = 1;
             this.btnKhachhang.Text = "Khách hàng";
-            this.btnKhachhang.UseVisualStyleBackColor = true;
+            this.btnKhachhang.UseVisualStyleBackColor = false;
             this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
             // 
             // btnSanpham
             // 
+            this.btnSanpham.BackColor = System.Drawing.Color.Transparent;
             this.btnSanpham.FlatAppearance.BorderSize = 0;
+            this.btnSanpham.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSanpham.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanpham.ForeColor = System.Drawing.Color.White;
             this.btnSanpham.Location = new System.Drawing.Point(0, 239);
             this.btnSanpham.Name = "btnSanpham";
             this.btnSanpham.Size = new System.Drawing.Size(200, 38);
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
-            this.btnSanpham.UseVisualStyleBackColor = true;
+            this.btnSanpham.UseVisualStyleBackColor = false;
             this.btnSanpham.Click += new System.EventHandler(this.btnSanpham_Click);
             // 
             // dtgvSQL
@@ -178,6 +197,7 @@
             // lblSDT
             // 
             this.lblSDT.AutoSize = true;
+            this.lblSDT.BackColor = System.Drawing.Color.Transparent;
             this.lblSDT.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.Location = new System.Drawing.Point(657, 98);
             this.lblSDT.Name = "lblSDT";
@@ -188,6 +208,7 @@
             // lblDiaChi
             // 
             this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.BackColor = System.Drawing.Color.Transparent;
             this.lblDiaChi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiaChi.Location = new System.Drawing.Point(657, 37);
             this.lblDiaChi.Name = "lblDiaChi";
@@ -198,6 +219,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(316, 98);
             this.lblEmail.Name = "lblEmail";
@@ -208,6 +230,7 @@
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
+            this.lblHoTen.BackColor = System.Drawing.Color.Transparent;
             this.lblHoTen.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoTen.Location = new System.Drawing.Point(316, 37);
             this.lblHoTen.Name = "lblHoTen";
@@ -263,6 +286,8 @@
             // 
             this.btnLamMoi.FlatAppearance.BorderSize = 0;
             this.btnLamMoi.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.Location = new System.Drawing.Point(719, 199);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 46);
@@ -290,6 +315,8 @@
             // 
             this.btnSua.FlatAppearance.BorderSize = 0;
             this.btnSua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.Location = new System.Drawing.Point(556, 199);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(137, 46);
@@ -304,6 +331,8 @@
             // 
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.Location = new System.Drawing.Point(393, 199);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 46);
@@ -318,6 +347,8 @@
             // 
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.Location = new System.Drawing.Point(230, 199);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 46);
@@ -331,6 +362,7 @@
             // lblVaiTro
             // 
             this.lblVaiTro.AutoSize = true;
+            this.lblVaiTro.BackColor = System.Drawing.Color.Transparent;
             this.lblVaiTro.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVaiTro.Location = new System.Drawing.Point(316, 152);
             this.lblVaiTro.Name = "lblVaiTro";
@@ -341,28 +373,31 @@
             // checkBox_NV
             // 
             this.checkBox_NV.AutoSize = true;
+            this.checkBox_NV.BackColor = System.Drawing.Color.Transparent;
             this.checkBox_NV.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_NV.Location = new System.Drawing.Point(393, 152);
             this.checkBox_NV.Name = "checkBox_NV";
             this.checkBox_NV.Size = new System.Drawing.Size(81, 19);
             this.checkBox_NV.TabIndex = 47;
             this.checkBox_NV.Text = "Nhân viên";
-            this.checkBox_NV.UseVisualStyleBackColor = true;
+            this.checkBox_NV.UseVisualStyleBackColor = false;
             // 
             // checkBox_QTri
             // 
             this.checkBox_QTri.AutoSize = true;
+            this.checkBox_QTri.BackColor = System.Drawing.Color.Transparent;
             this.checkBox_QTri.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_QTri.Location = new System.Drawing.Point(483, 152);
             this.checkBox_QTri.Name = "checkBox_QTri";
             this.checkBox_QTri.Size = new System.Drawing.Size(69, 19);
             this.checkBox_QTri.TabIndex = 48;
             this.checkBox_QTri.Text = "Quản trị";
-            this.checkBox_QTri.UseVisualStyleBackColor = true;
+            this.checkBox_QTri.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(657, 156);
             this.label1.Name = "label1";
@@ -397,6 +432,8 @@
             // 
             // ptbShowPass
             // 
+            this.ptbShowPass.BackColor = System.Drawing.Color.Transparent;
+            this.ptbShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbShowPass.Image = global::BiTiApp.Properties.Resources.hidepass;
             this.ptbShowPass.Location = new System.Drawing.Point(955, 150);
             this.ptbShowPass.Name = "ptbShowPass";
@@ -411,7 +448,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.ptbSearch);
             this.Controls.Add(this.ptbShowPass);
@@ -435,6 +474,7 @@
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dtgvSQL);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "frmQuanLy";
             this.Text = "frmQuanLy";
             this.Load += new System.EventHandler(this.frmQuanLy_Load);

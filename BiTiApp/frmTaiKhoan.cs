@@ -57,32 +57,32 @@ namespace BiTiApp
         //Đổi màu button khi lia chuột
         private void btnSua_MouseEnter(object sender, EventArgs e)
         {
-            btnSua.BackColor = Color.FromArgb(100, 200, 50);
+            btnSua.ForeColor = Color.White;
         }
 
         private void btnSua_MouseLeave(object sender, EventArgs e)
         {
-            btnSua.BackColor = SystemColors.Control;
+            btnSua.ForeColor = Color.Black;
         }
 
         private void btnLamMoi_MouseEnter(object sender, EventArgs e)
         {
-            btnLamMoi.BackColor = Color.FromArgb(100, 200, 50);
+            btnLamMoi.ForeColor = Color.White;
         }
 
         private void btnLamMoi_MouseLeave(object sender, EventArgs e)
         {
-            btnLamMoi.BackColor = SystemColors.Control;
+            btnLamMoi.ForeColor = Color.Black;
         }
 
         private void btnDoiMatKhau_MouseEnter(object sender, EventArgs e)
         {
-            btnDoiMatKhau.BackColor = Color.FromArgb(100, 200, 50);
+            btnDoiMatKhau.ForeColor = Color.White;
         }
 
         private void btnDoiMatKhau_MouseLeave(object sender, EventArgs e)
         {
-            btnDoiMatKhau.BackColor = SystemColors.Control;
+            btnDoiMatKhau.ForeColor = Color.Black;
         }
     }
 }

@@ -47,7 +47,7 @@
             // dtgvSQL
             // 
             this.dtgvSQL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(51)))), ((int)(((byte)(101)))));
+            this.dtgvSQL.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(5)))), ((int)(((byte)(176)))));
             this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSQL.Location = new System.Drawing.Point(208, 105);
             this.dtgvSQL.Name = "dtgvSQL";
@@ -56,7 +56,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(52)))), ((int)(((byte)(115)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
+            this.panel1.BackgroundImage = global::BiTiApp.Properties.Resources.pn;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnQuanLy);
             this.panel1.Controls.Add(this.pictureLogo);
             this.panel1.Controls.Add(this.btnDangxuat);
@@ -72,18 +74,22 @@
             // 
             // btnQuanLy
             // 
+            this.btnQuanLy.BackColor = System.Drawing.Color.Transparent;
             this.btnQuanLy.FlatAppearance.BorderSize = 0;
+            this.btnQuanLy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnQuanLy.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLy.ForeColor = System.Drawing.Color.White;
             this.btnQuanLy.Location = new System.Drawing.Point(0, 186);
             this.btnQuanLy.Name = "btnQuanLy";
             this.btnQuanLy.Size = new System.Drawing.Size(200, 38);
             this.btnQuanLy.TabIndex = 27;
             this.btnQuanLy.Text = "Quản lý";
-            this.btnQuanLy.UseVisualStyleBackColor = true;
+            this.btnQuanLy.UseVisualStyleBackColor = false;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click);
             // 
             // pictureLogo
             // 
+            this.pictureLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureLogo.Image = global::BiTiApp.Properties.Resources.logoBiTi;
             this.pictureLogo.Location = new System.Drawing.Point(3, 21);
             this.pictureLogo.Name = "pictureLogo";
@@ -94,35 +100,41 @@
             // 
             // btnDangxuat
             // 
+            this.btnDangxuat.BackColor = System.Drawing.Color.Transparent;
             this.btnDangxuat.FlatAppearance.BorderSize = 0;
-            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDangxuat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Location = new System.Drawing.Point(0, 542);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(200, 37);
             this.btnDangxuat.TabIndex = 4;
             this.btnDangxuat.Text = "Đăng xuất";
-            this.btnDangxuat.UseVisualStyleBackColor = true;
+            this.btnDangxuat.UseVisualStyleBackColor = false;
             this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // btnTaikhoang
             // 
+            this.btnTaikhoang.BackColor = System.Drawing.Color.Transparent;
             this.btnTaikhoang.FlatAppearance.BorderSize = 0;
+            this.btnTaikhoang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTaikhoang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaikhoang.ForeColor = System.Drawing.Color.White;
             this.btnTaikhoang.Location = new System.Drawing.Point(0, 350);
             this.btnTaikhoang.Name = "btnTaikhoang";
             this.btnTaikhoang.Size = new System.Drawing.Size(200, 38);
             this.btnTaikhoang.TabIndex = 3;
             this.btnTaikhoang.Text = "Tài khoản";
-            this.btnTaikhoang.UseVisualStyleBackColor = true;
+            this.btnTaikhoang.UseVisualStyleBackColor = false;
             this.btnTaikhoang.Click += new System.EventHandler(this.btnTaikhoang_Click);
             // 
             // btnHoadon
             // 
-            this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.btnHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(71)))), ((int)(((byte)(69)))));
             this.btnHoadon.FlatAppearance.BorderSize = 0;
             this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoadon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoadon.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoadon.ForeColor = System.Drawing.Color.White;
             this.btnHoadon.Location = new System.Drawing.Point(0, 297);
             this.btnHoadon.Name = "btnHoadon";
             this.btnHoadon.Size = new System.Drawing.Size(200, 54);
@@ -132,34 +144,41 @@
             // 
             // btnKhachhang
             // 
+            this.btnKhachhang.BackColor = System.Drawing.Color.Transparent;
             this.btnKhachhang.FlatAppearance.BorderSize = 0;
+            this.btnKhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnKhachhang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachhang.ForeColor = System.Drawing.Color.White;
             this.btnKhachhang.Location = new System.Drawing.Point(0, 260);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.Size = new System.Drawing.Size(200, 38);
             this.btnKhachhang.TabIndex = 1;
             this.btnKhachhang.Text = "Khách hàng";
-            this.btnKhachhang.UseVisualStyleBackColor = true;
+            this.btnKhachhang.UseVisualStyleBackColor = false;
             this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
             // 
             // btnSanpham
             // 
+            this.btnSanpham.BackColor = System.Drawing.Color.Transparent;
             this.btnSanpham.FlatAppearance.BorderSize = 0;
+            this.btnSanpham.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSanpham.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanpham.ForeColor = System.Drawing.Color.White;
             this.btnSanpham.Location = new System.Drawing.Point(0, 223);
             this.btnSanpham.Name = "btnSanpham";
             this.btnSanpham.Size = new System.Drawing.Size(200, 38);
             this.btnSanpham.TabIndex = 0;
             this.btnSanpham.Text = "Sản phẩm";
-            this.btnSanpham.UseVisualStyleBackColor = true;
+            this.btnSanpham.UseVisualStyleBackColor = false;
             this.btnSanpham.Click += new System.EventHandler(this.btnSanpham_Click);
             // 
             // btnTaoHoaDon
             // 
-            this.btnTaoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(175)))), ((int)(((byte)(194)))));
+            this.btnTaoHoaDon.BackColor = System.Drawing.SystemColors.Control;
             this.btnTaoHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnTaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoHoaDon.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoHoaDon.Image = global::BiTiApp.Properties.Resources.radianDoXanh;
+            this.btnTaoHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaoHoaDon.Location = new System.Drawing.Point(706, 31);
             this.btnTaoHoaDon.Name = "btnTaoHoaDon";
             this.btnTaoHoaDon.Size = new System.Drawing.Size(137, 46);
@@ -172,7 +191,7 @@
             // 
             // txtSreach_TheoTenKH
             // 
-            this.txtSreach_TheoTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.txtSreach_TheoTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(116)))), ((int)(((byte)(227)))));
             this.txtSreach_TheoTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSreach_TheoTenKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSreach_TheoTenKH.Location = new System.Drawing.Point(429, 38);
@@ -187,7 +206,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(102)))), ((int)(((byte)(150)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.btnTaoHoaDon);
             this.Controls.Add(this.txtSreach_TheoTenKH);

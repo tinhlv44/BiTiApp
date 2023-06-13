@@ -173,5 +173,20 @@
   <ItemGroup>
     <None Include="Resources\iconTK.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radianMauXanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radianDoXanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phoimau3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pn.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

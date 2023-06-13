@@ -209,42 +209,42 @@ namespace BiTiApp
         //Đổi màu button
         private void btnThem_MouseEnter(object sender, EventArgs e)
         {
-            btnThem.BackColor = Color.FromArgb(181, 172, 7);
+            btnThem.ForeColor = Color.White;
         }
 
         private void btnThem_MouseLeave(object sender, EventArgs e)
         {
-            btnThem.BackColor = SystemColors.Control;
+            btnThem.ForeColor = Color.Black;
         }
 
         private void btnXoa_MouseEnter(object sender, EventArgs e)
         {
-            btnXoa.BackColor = Color.FromArgb(181, 172, 7);
+            btnXoa.ForeColor = Color.White;
         }
 
         private void btnXoa_MouseLeave(object sender, EventArgs e)
         {
-            btnXoa.BackColor = SystemColors.Control;
+            btnXoa.ForeColor= Color.Black;
         }
 
         private void btnSua_MouseEnter(object sender, EventArgs e)
         {
-            btnSua.BackColor = Color.FromArgb(181, 172, 7);
+            btnSua.ForeColor = Color.White;
         }
 
         private void btnSua_MouseLeave(object sender, EventArgs e)
         {
-            btnSua.BackColor = SystemColors.Control;
+            btnSua.ForeColor= Color.Black;
         }
 
         private void btnLamMoi_MouseEnter(object sender, EventArgs e)
         {
-            btnLamMoi.BackColor = Color.FromArgb(181, 172, 7);
+            btnLamMoi.ForeColor = Color.White;
         }
 
         private void btnLamMoi_MouseLeave(object sender, EventArgs e)
         {
-            btnLamMoi.BackColor = SystemColors.Control;
+            btnLamMoi.ForeColor= Color.Black;
         }
 
         private void txtSreachTenKH_MouseEnter(object sender, EventArgs e)
@@ -254,7 +254,7 @@ namespace BiTiApp
 
         private void txtSreachTenKH_MouseLeave(object sender, EventArgs e)
         {
-            txtSreachTenKH.BackColor = SystemColors.Control;
+            txtSreachTenKH.BackColor = Color.FromArgb(220, 116, 227);
         }
     }
 }

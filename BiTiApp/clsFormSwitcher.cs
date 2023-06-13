@@ -24,31 +24,31 @@ namespace BiTiApp
             {
                 case "frmSanPham":
                     frmSanPham frmSanPham = new frmSanPham();
-                    frmSanPham.WindowState = FormWindowState.Maximized;
+                    //frmSanPham.WindowState = FormWindowState.Maximized;
                     frmSanPham.Show();
                     frm.Hide();
                     break;
                 case "frmQuanLy":
                     frmQuanLy frmQuanLy = new frmQuanLy();
-                    frmQuanLy.WindowState = FormWindowState.Maximized;
+                    //frmQuanLy.WindowState = FormWindowState.Maximized;
                     frmQuanLy.Show();
                     frm.Hide();
                     break;
                 case "frmKhachHang":
                     frmKhachHang frmKhachHang = new frmKhachHang();
-                    frmKhachHang.WindowState = FormWindowState.Maximized;
+                    //frmKhachHang.WindowState = FormWindowState.Maximized;
                     frmKhachHang.Show();
                     frm.Hide();
                     break;
                 case "frmHoaDon":
                     frmHoaDon frmHoaDon = new frmHoaDon();
-                    frmHoaDon.WindowState = FormWindowState.Maximized;
+                    //frmHoaDon.WindowState = FormWindowState.Maximized;
                     frmHoaDon.Show();
                     frm.Hide();
                     break;
                 case "frmTaiKhoan":
                     frmTaiKhoan frmTaiKhoan = new frmTaiKhoan();
-                    frmTaiKhoan.WindowState = FormWindowState.Maximized;
+                    //frmTaiKhoan.WindowState = FormWindowState.Maximized;
                     frmTaiKhoan.Show();
                     frm.Hide();
                     break;
@@ -66,7 +66,7 @@ namespace BiTiApp
                     break;
                 case "frmChiTietHoaDon":
                     frmChiTietHoaDon frmChiTietHoaDon = new frmChiTietHoaDon();
-                    frmChiTietHoaDon.WindowState = FormWindowState.Maximized;
+                   // frmChiTietHoaDon.WindowState = FormWindowState.Maximized;
                     frmChiTietHoaDon.Show();
                     frm.Hide();
                     break;
