@@ -72,7 +72,14 @@ namespace BiTiApp
 
         private void btnTaoHoaDon_Click(object sender, EventArgs e)
         {
-            clsFormSwitcher.SwitchForm("frmChiTietHoaDon", this);
+            if (dtgvSQL.SelectedRows.Count > 0)
+            {
+                clsFormSwitcher.SwitchForm("frmChiTietHoaDon", this);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn hóa đơn để xem chi tiết");
+            }
         }
         //đổi màu button
         private void btnTaoHoaDon_MouseEnter(object sender, EventArgs e)
@@ -84,15 +91,21 @@ namespace BiTiApp
         {
             btnTaoHoaDon.ForeColor = Color.Black;
         }
-
-        private void txtSreach_TheoTenKH_MouseEnter(object sender, EventArgs e)
+        private void dtgvSQL_SelectionChanged(object sender, EventArgs e)
         {
-            txtSreach_TheoTenKH.BackColor = Color.FromArgb(163, 175, 204);
+            if (dtgvSQL.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dtgvSQL.SelectedRows[0];
+                clsIsManager.saveOrderID(selectedRow.Cells[0].Value.ToString());
+            }
         }
 
-        private void txtSreach_TheoTenKH_MouseLeave(object sender, EventArgs e)
+        private void txtSreach_TheoTenKH_Click(object sender, EventArgs e)
         {
-            txtSreach_TheoTenKH.BackColor = Color.FromArgb(220, 116, 227);
+            if (txtSreach_TheoTenKH.Text == "Tìm kiếm theo mã khách hàng")
+            {
+                txtSreach_TheoTenKH.Text = "";
+            }
         }
     }
 }

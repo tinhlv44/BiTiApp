@@ -53,6 +53,7 @@
             this.dtgvSQL.Name = "dtgvSQL";
             this.dtgvSQL.Size = new System.Drawing.Size(890, 486);
             this.dtgvSQL.TabIndex = 21;
+            this.dtgvSQL.SelectionChanged += new System.EventHandler(this.dtgvSQL_SelectionChanged);
             // 
             // panel1
             // 
@@ -201,8 +202,8 @@
             this.txtSreach_TheoTenKH.Name = "txtSreach_TheoTenKH";
             this.txtSreach_TheoTenKH.Size = new System.Drawing.Size(251, 32);
             this.txtSreach_TheoTenKH.TabIndex = 26;
-            this.txtSreach_TheoTenKH.MouseEnter += new System.EventHandler(this.txtSreach_TheoTenKH_MouseEnter);
-            this.txtSreach_TheoTenKH.MouseLeave += new System.EventHandler(this.txtSreach_TheoTenKH_MouseLeave);
+            this.txtSreach_TheoTenKH.Text = "Tìm kiếm theo mã khách hàng";
+            this.txtSreach_TheoTenKH.Click += new System.EventHandler(this.txtSreach_TheoTenKH_Click);
             // 
             // frmHoaDon
             // 
