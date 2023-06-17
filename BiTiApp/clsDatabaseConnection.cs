@@ -14,8 +14,8 @@ namespace BiTiApp
         private SqlConnection connection;
         public SqlConnection Open()
         {
-            string connectionString = @"server=ADMIN-PC\SQLEXPRESS;Database=BiTiApp;Integrated security=True"; // của Tính
-            //string connectionString = @"server=DESKTOP-CM888JL\KTEAM;Database=BiTiApp;Integrated security=True"; // của Bình
+          //  string connectionString = @"server=ADMIN-PC\SQLEXPRESS;Database=BiTiApp;Integrated security=True"; // của Tính
+            string connectionString = @"server=DESKTOP-CM888JL\KTEAM;Database=BiTiApp;Integrated security=True"; // của Bình
             connection = new SqlConnection(connectionString);
             try
             {
