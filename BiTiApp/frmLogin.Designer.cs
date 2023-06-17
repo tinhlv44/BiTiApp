@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pnLogin = new System.Windows.Forms.Panel();
             this.btnRegChange = new System.Windows.Forms.Button();
             this.btnDangNhapTaiKhoan = new System.Windows.Forms.Button();
@@ -44,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblClose = new System.Windows.Forms.Label();
-            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.txtDangkyTaiKhoan = new System.Windows.Forms.Button();
             this.txtMatKhau_Dangky = new System.Windows.Forms.TextBox();
@@ -58,11 +55,11 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblRegClose = new System.Windows.Forms.Label();
             this.pnRegister = new System.Windows.Forms.Panel();
+            this.cbxshowpass2 = new System.Windows.Forms.CheckBox();
             this.btnLoginChange = new System.Windows.Forms.Button();
             this.txtNhapLai_MatKhau_Dky = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.cbxshowpass2 = new System.Windows.Forms.CheckBox();
             this.pnLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -237,14 +234,6 @@
             this.lblClose.TabIndex = 0;
             this.lblClose.Text = "X";
             // 
-            // imageList
-            // 
-            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
-            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "email.png");
-            this.imageList.Images.SetKeyName(1, "pass.png");
-            this.imageList.Images.SetKeyName(2, "user.png");
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -395,6 +384,19 @@
             this.pnRegister.TabIndex = 12;
             this.pnRegister.Visible = false;
             // 
+            // cbxshowpass2
+            // 
+            this.cbxshowpass2.AutoSize = true;
+            this.cbxshowpass2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxshowpass2.ForeColor = System.Drawing.Color.White;
+            this.cbxshowpass2.Location = new System.Drawing.Point(91, 259);
+            this.cbxshowpass2.Name = "cbxshowpass2";
+            this.cbxshowpass2.Size = new System.Drawing.Size(120, 21);
+            this.cbxshowpass2.TabIndex = 13;
+            this.cbxshowpass2.Text = "Hiện mật khẩu";
+            this.cbxshowpass2.UseVisualStyleBackColor = true;
+            this.cbxshowpass2.CheckedChanged += new System.EventHandler(this.checkBox_ShowPass_CheckedChanged);
+            // 
             // btnLoginChange
             // 
             this.btnLoginChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(36)))), ((int)(((byte)(148)))));
@@ -440,19 +442,6 @@
             this.label11.Size = new System.Drawing.Size(180, 1);
             this.label11.TabIndex = 12;
             // 
-            // cbxshowpass2
-            // 
-            this.cbxshowpass2.AutoSize = true;
-            this.cbxshowpass2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxshowpass2.ForeColor = System.Drawing.Color.White;
-            this.cbxshowpass2.Location = new System.Drawing.Point(91, 259);
-            this.cbxshowpass2.Name = "cbxshowpass2";
-            this.cbxshowpass2.Size = new System.Drawing.Size(120, 21);
-            this.cbxshowpass2.TabIndex = 13;
-            this.cbxshowpass2.Text = "Hiện mật khẩu";
-            this.cbxshowpass2.UseVisualStyleBackColor = true;
-            this.cbxshowpass2.CheckedChanged += new System.EventHandler(this.checkBox_ShowPass_CheckedChanged);
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,7 +477,6 @@
         private System.Windows.Forms.Panel pnLogin;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

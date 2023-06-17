@@ -38,7 +38,7 @@
             this.btnKhachhang = new System.Windows.Forms.Button();
             this.btnSanpham = new System.Windows.Forms.Button();
             this.btnTaoHoaDon = new System.Windows.Forms.Button();
-            this.txtSreach_TheoTenKH = new System.Windows.Forms.TextBox();
+            this.txtMaKH = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
@@ -186,24 +186,23 @@
             this.btnTaoHoaDon.Name = "btnTaoHoaDon";
             this.btnTaoHoaDon.Size = new System.Drawing.Size(137, 46);
             this.btnTaoHoaDon.TabIndex = 25;
-            this.btnTaoHoaDon.Text = "Tạo hóa đơn";
+            this.btnTaoHoaDon.Text = "Chi tiết hóa đơn";
             this.btnTaoHoaDon.UseVisualStyleBackColor = false;
             this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
             this.btnTaoHoaDon.MouseEnter += new System.EventHandler(this.btnTaoHoaDon_MouseEnter);
             this.btnTaoHoaDon.MouseLeave += new System.EventHandler(this.btnTaoHoaDon_MouseLeave);
             // 
-            // txtSreach_TheoTenKH
+            // txtMaKH
             // 
-            this.txtSreach_TheoTenKH.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSreach_TheoTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSreach_TheoTenKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSreach_TheoTenKH.Location = new System.Drawing.Point(429, 38);
-            this.txtSreach_TheoTenKH.Multiline = true;
-            this.txtSreach_TheoTenKH.Name = "txtSreach_TheoTenKH";
-            this.txtSreach_TheoTenKH.Size = new System.Drawing.Size(251, 32);
-            this.txtSreach_TheoTenKH.TabIndex = 26;
-            this.txtSreach_TheoTenKH.Text = "Tìm kiếm theo mã khách hàng";
-            this.txtSreach_TheoTenKH.Click += new System.EventHandler(this.txtSreach_TheoTenKH_Click);
+            this.txtMaKH.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMaKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKH.Location = new System.Drawing.Point(429, 38);
+            this.txtMaKH.Multiline = true;
+            this.txtMaKH.Name = "txtMaKH";
+            this.txtMaKH.ReadOnly = true;
+            this.txtMaKH.Size = new System.Drawing.Size(251, 32);
+            this.txtMaKH.TabIndex = 26;
             // 
             // frmHoaDon
             // 
@@ -214,7 +213,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 591);
             this.Controls.Add(this.btnTaoHoaDon);
-            this.Controls.Add(this.txtSreach_TheoTenKH);
+            this.Controls.Add(this.txtMaKH);
             this.Controls.Add(this.dtgvSQL);
             this.Controls.Add(this.panel1);
             this.Name = "frmHoaDon";
@@ -239,7 +238,7 @@
         private System.Windows.Forms.Button btnKhachhang;
         private System.Windows.Forms.Button btnSanpham;
         private System.Windows.Forms.Button btnTaoHoaDon;
-        private System.Windows.Forms.TextBox txtSreach_TheoTenKH;
+        private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.Button btnQuanLy;
     }
 }

@@ -34,6 +34,7 @@ namespace BiTiApp
             }
             catch (Exception ex)
             {
+                ex.ToString();
                 txtDiaChi.Text = "";
             }
             txtSDT.Text = (string)acc["Phone"];

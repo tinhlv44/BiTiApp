@@ -31,6 +31,7 @@ namespace BiTiApp
                 ShowLimitedContent();
             }
             dtgvSQLShow();
+            //this.reportViewer1.RefreshReport();
         }
         private void dtgvSQLShow()
         {
@@ -102,7 +103,7 @@ namespace BiTiApp
                     catch (Exception ex)
                     {
                         // Nếu không tìm thấy tệp ảnh, hiển thị một thông báo lỗi.
-                        MessageBox.Show("Không tìm thấy tệp ảnh. Xin vui lòng kiểm tra lại tên ảnh và thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Không tìm thấy tệp ảnh. Xin vui lòng kiểm tra lại tên ảnh và thử lại." + ex.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 txtMaSP.ReadOnly = true;

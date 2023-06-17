@@ -48,6 +48,7 @@
             this.dtgvSQL = new System.Windows.Forms.DataGridView();
             this.txtTongThanhTien = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSQL)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,7 +216,7 @@
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(137, 46);
             this.btnThanhToan.TabIndex = 32;
-            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.Text = "In hóa đơn";
             this.btnThanhToan.UseVisualStyleBackColor = false;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
@@ -239,6 +240,7 @@
             this.dtgvSQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSQL.Location = new System.Drawing.Point(3, 277);
             this.dtgvSQL.Name = "dtgvSQL";
+            this.dtgvSQL.ReadOnly = true;
             this.dtgvSQL.Size = new System.Drawing.Size(1095, 310);
             this.dtgvSQL.TabIndex = 36;
             this.dtgvSQL.SelectionChanged += new System.EventHandler(this.dtgvSQL_SelectionChanged);
@@ -265,6 +267,14 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "Tổng thành tiền:";
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(114, 101);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(637, 433);
+            this.reportViewer1.TabIndex = 39;
+            // 
             // frmChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,6 +283,7 @@
             this.BackgroundImage = global::BiTiApp.Properties.Resources.phoimau3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 591);
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.txtTongThanhTien);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgvSQL);
@@ -321,5 +332,6 @@
         private System.Windows.Forms.DataGridView dtgvSQL;
         private System.Windows.Forms.TextBox txtTongThanhTien;
         private System.Windows.Forms.Label label1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

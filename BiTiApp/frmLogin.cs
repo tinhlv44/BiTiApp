@@ -153,7 +153,7 @@ namespace BiTiApp
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            btnRegChange.Visible = false;
         }
     }
 }   

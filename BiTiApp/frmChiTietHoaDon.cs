@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using Microsoft.ReportingServices.Diagnostics.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,8 +57,14 @@ namespace BiTiApp
             SqlDataAdapter sql = new SqlDataAdapter(@"SELECT * FROM OrderDetail WHERE OrderID='" + orderID + "'", con.Open());
             sql.Fill(dtgv);
             dtgvSQL.DataSource = dtgv;
-            this.reportViewer1.RefreshReport();
-            this.reportViewer2.RefreshReport();
+
+            dtgvSQL.Columns[0].HeaderText = "Mã hóa đơn";
+            dtgvSQL.Columns[1].HeaderText = "Mã sản phẩm";
+            dtgvSQL.Columns[2].HeaderText = "Số lượng";
+            dtgvSQL.Columns[3].HeaderText = "Giá sản phẩm";
+
+            reportViewer1.Visible = false;
+            con.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -67,7 +75,35 @@ namespace BiTiApp
         {
             if (txtMaNVvaTenNV.Text != "")
             {
+                clsDatabaseConnection con = new clsDatabaseConnection();
+                List<HDrpt> list = new List<HDrpt>();
+                for (int i = 0; i < dtgv.Rows.Count; i++)
+                {
+                    HDrpt t = new HDrpt();
+                    t.price = dtgv.Rows[i]["UnitPrice"].ToString();
+                    t.amount = dtgv.Rows[i]["Quantity"].ToString();
+                    SqlCommand cmd = new SqlCommand("SELECT CustomerName FROM Customer WHERE CustomerID = '" + txtMaKHvaTenKH.Text + "'", con.Open());
+                    t.cusName = (string)cmd.ExecuteScalar();
+                    string masp = dtgv.Rows[i]["ProductID"].ToString();
+                    cmd = new SqlCommand("SELECT ProductName FROM Product WHERE ProductID = '" + masp + "'", con.Open());
+                    t.prodName = (string)cmd.ExecuteScalar(); ;
+                    t.timeNow = DateTime.Now.ToString(); ;
+                    t.sumMoney = txtTongThanhTien.Text;
+                    int soLuong = Convert.ToInt32(t.amount);
+                    int donGia = Convert.ToInt32(t.price);
+                    t.money = Convert.ToString(soLuong * donGia);
+                    t.time = txtThoiGian.Text;
+                    t.empName = txtMaNVvaTenNV.Text;
+                    list.Add(t);
+                }
+                this.reportViewer1.LocalReport.ReportPath = "Report.rdlc";
+                ReportDataSource rds = new ReportDataSource("dtsCTHD", list);
+                this.reportViewer1.LocalReport.DataSources.Clear();
+                this.reportViewer1.LocalReport.DataSources.Add(rds);
 
+                this.reportViewer1.RefreshReport();
+                reportViewer1.Visible = true;
+                con.Close();
             }
             else
             {

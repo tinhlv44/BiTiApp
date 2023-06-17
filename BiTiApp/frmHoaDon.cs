@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.ReportingServices.Diagnostics.Internal;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -97,14 +99,8 @@ namespace BiTiApp
             {
                 DataGridViewRow selectedRow = dtgvSQL.SelectedRows[0];
                 clsIsManager.saveOrderID(selectedRow.Cells[0].Value.ToString());
-            }
-        }
-
-        private void txtSreach_TheoTenKH_Click(object sender, EventArgs e)
-        {
-            if (txtSreach_TheoTenKH.Text == "Tìm kiếm theo mã khách hàng")
-            {
-                txtSreach_TheoTenKH.Text = "";
+                txtMaKH.Text = selectedRow.Cells[0].Value.ToString();
+                txtMaKH.ReadOnly = true;
             }
         }
     }

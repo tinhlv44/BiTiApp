@@ -282,7 +282,7 @@
             this.txtTenSP.Location = new System.Drawing.Point(344, 48);
             this.txtTenSP.Multiline = true;
             this.txtTenSP.Name = "txtTenSP";
-            this.txtTenSP.Size = new System.Drawing.Size(173, 28);
+            this.txtTenSP.Size = new System.Drawing.Size(255, 28);
             this.txtTenSP.TabIndex = 10;
             // 
             // txtSoLuong
